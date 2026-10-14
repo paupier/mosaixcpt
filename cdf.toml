@@ -11,8 +11,8 @@ version = "0.8.158"
 [plugins]
 dump = false
 dev = false
-data = false
-functions = false
+data = true
+functions = true
 
 
 [library.cognite]

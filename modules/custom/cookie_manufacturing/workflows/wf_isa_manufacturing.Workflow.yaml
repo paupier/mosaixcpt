@@ -1,0 +1,4 @@
+externalId: {{ workflowExternalId }}
+description: Build ISA assets then enrich with typed overlays
+dataSetExternalId: {{ datasetExternalId }}
+

@@ -1,0 +1,7 @@
+- externalId: {{ datasetExternalId }}
+  name: '{{ userPrefix }}ISA Manufacturing'
+  description: Dataset for ISA Manufacturing (TS, transform. and workflow)
+  writeProtected: false
+  metadata:
+    origin: datamosaix-toolkit
+

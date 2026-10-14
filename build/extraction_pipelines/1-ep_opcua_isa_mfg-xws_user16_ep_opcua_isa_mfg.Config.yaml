@@ -1,0 +1,547 @@
+externalId: xws_user16_ep_opcua_isa_mfg
+description: OPC-UA extractor configuration for ISA Manufacturing
+config: "version: 1\ncognite:\n  cdf-chunking:\n    data-point-time-series: 500\n\
+  \    data-points: 10000\n  data-set:\n    external-id: 'xws_user16_ds_isa_mfg'\n\
+  \  debug: false\n  host: ${CDF_URL}\n  non-finite-replacement: null\n  project:\
+  \ ${CDF_PROJECT}\n  metadata-targets:\n    clean:\n      space: 'xws_user16_spc_inst_isa_mfg'\n\
+  \      timeseries: true\n      assets: false\n      relationships: false\n     \
+  \ metadata-as-json: false\nextraction:\n  root-nodes:\n    - namespace-uri: \"SM_Oven\"\
+  \n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_TEMP_DEGC\"\n  \
+  \  - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_PRESSURE_BAR\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_AIRFLOW_M3H\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_BURNER_LOAD_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_ZONE_DELTA_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_THROUGHPUT_KG_H\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_TEMP_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_PRESSURE_BAR\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_AIRFLOW_M3H\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_BURNER_LOAD_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_ZONE_DELTA_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_THROUGHPUT_KG_H\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_ALARM_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_HUMIDITY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_HUMIDITY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_EXHAUST_TEMP_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_EXHAUST_TEMP_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_ALARM_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_MIX_WEIGH_HOPPER_1_TEMP_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_PACK_FLOW_WRAPPER_PRESSURE_BAR\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_COOL_COOLING_TABLE_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_FORM_ROTARY_MOLDER_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_FORM_WIRECUT_MACHINE_LOAD_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_TEMP_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_PRESSURE_BAR\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_AIRFLOW_M3H\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_BURNER_LOAD_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_ZONE_DELTA_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_THROUGHPUT_KG_H\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_TEMP_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_PRESSURE_BAR\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_AIRFLOW_M3H\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_BURNER_LOAD_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_ZONE_DELTA_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_THROUGHPUT_KG_H\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_ALARM_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_HUMIDITY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_HUMIDITY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_EXHAUST_TEMP_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_EXHAUST_TEMP_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_ALARM_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_MIX_WEIGH_HOPPER_1_TEMP_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_PACK_FLOW_WRAPPER_PRESSURE_BAR\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_COOL_COOLING_TABLE_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_FORM_ROTARY_MOLDER_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_FORM_WIRECUT_MACHINE_LOAD_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_A_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_A_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_A_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_B_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_B_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_B_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_A_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_A_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_A_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_B_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_B_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_B_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_A_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_A_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_A_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_B_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_B_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_B_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_1_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_2_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_1_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_2_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_1_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_2_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_SILO_1_FILL_LEVEL_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_SILO_1_TEMPERATURE_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_SILO_2_FILL_LEVEL_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_SILO_2_TEMPERATURE_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_LIQUID_SKID_FLOW_RATE_LH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_LIQUID_SKID_PRESSURE_BAR\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_A_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_A_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_A_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_B_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_B_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_B_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_A_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_A_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_A_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_B_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_B_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_B_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_A_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_A_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_A_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_B_BATTERY_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_B_LOAD_KG\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_B_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_1_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_2_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_1_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_2_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_1_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_2_OPERATING_STATE\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_SILO_1_FILL_LEVEL_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_SILO_1_TEMPERATURE_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_SILO_2_FILL_LEVEL_PCT\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_SILO_2_TEMPERATURE_DEGC\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_LIQUID_SKID_FLOW_RATE_LH\"\
+  \n    - namespace-uri: \"SM_Oven\"\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_LIQUID_SKID_PRESSURE_BAR\"\
+  \n  node-map:      \n    'xws_user16_TS_CHI_BAKE_OVEN1_TEMP_DEGC':\n      node-id:\
+  \ \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_TEMP_DEGC\"\n      namespace-uri:\
+  \ \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_PRESSURE_BAR':\n      node-id:\
+  \ \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_PRESSURE_BAR\"\n      namespace-uri:\
+  \ \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_AIRFLOW_M3H':\n      node-id: \"\
+  s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_AIRFLOW_M3H\"\n      namespace-uri:\
+  \ \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_BURNER_LOAD_PCT':\n      node-id:\
+  \ \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_BURNER_LOAD_PCT\"\n      namespace-uri:\
+  \ \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_ZONE_DELTA_DEGC':\n      node-id:\
+  \ \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_ZONE_DELTA_DEGC\"\n      namespace-uri:\
+  \ \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_VIBRATION_MM_S':\n      node-id:\
+  \ \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_VIBRATION_MM_S\"\n      namespace-uri:\
+  \ \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_MOTOR_CURRENT_A':\n      node-id:\
+  \ \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_MOTOR_CURRENT_A\"\n      namespace-uri:\
+  \ \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_SPEED_MPM':\n      node-id: \"\
+  s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_SPEED_MPM\"\n      namespace-uri: \"\
+  SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_THROUGHPUT_KG_H':\n      node-id: \"\
+  s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_THROUGHPUT_KG_H\"\n      namespace-uri:\
+  \ \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_TEMP_DEGC':\n      node-id: \"\
+  s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_TEMP_DEGC\"\n      namespace-uri: \"\
+  SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_PRESSURE_BAR':\n      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_PRESSURE_BAR\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_AIRFLOW_M3H':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_AIRFLOW_M3H\"\n \
+  \     namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_BURNER_LOAD_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_BURNER_LOAD_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_ZONE_DELTA_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_ZONE_DELTA_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_VIBRATION_MM_S\"\n\
+  \      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_SPEED_MPM\"\n   \
+  \   namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_THROUGHPUT_KG_H':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_THROUGHPUT_KG_H\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_ALARM_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_ALARM_STATE\"\n \
+  \     namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_HUMIDITY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_HUMIDITY_PCT\"\n\
+  \      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_HUMIDITY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_HUMIDITY_PCT\"\n\
+  \      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_EXHAUST_TEMP_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_EXHAUST_TEMP_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN2_EXHAUST_TEMP_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN2_EXHAUST_TEMP_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_BAKE_OVEN1_ALARM_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_BAKE_OVEN1_ALARM_STATE\"\n \
+  \     namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_MIX_WEIGH_HOPPER_1_TEMP_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_MIX_WEIGH_HOPPER_1_TEMP_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_PACK_FLOW_WRAPPER_PRESSURE_BAR':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_PACK_FLOW_WRAPPER_PRESSURE_BAR\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_COOL_COOLING_TABLE_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_COOL_COOLING_TABLE_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_FORM_ROTARY_MOLDER_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_FORM_ROTARY_MOLDER_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_FORM_WIRECUT_MACHINE_LOAD_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_FORM_WIRECUT_MACHINE_LOAD_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_TEMP_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_TEMP_DEGC\"\n   \
+  \   namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_PRESSURE_BAR':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_PRESSURE_BAR\"\n\
+  \      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_AIRFLOW_M3H':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_AIRFLOW_M3H\"\n \
+  \     namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_BURNER_LOAD_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_BURNER_LOAD_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_ZONE_DELTA_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_ZONE_DELTA_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_VIBRATION_MM_S\"\n\
+  \      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_SPEED_MPM\"\n   \
+  \   namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_THROUGHPUT_KG_H':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_THROUGHPUT_KG_H\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_TEMP_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_TEMP_DEGC\"\n   \
+  \   namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_PRESSURE_BAR':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_PRESSURE_BAR\"\n\
+  \      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_AIRFLOW_M3H':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_AIRFLOW_M3H\"\n \
+  \     namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_BURNER_LOAD_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_BURNER_LOAD_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_ZONE_DELTA_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_ZONE_DELTA_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_VIBRATION_MM_S\"\n\
+  \      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_SPEED_MPM\"\n   \
+  \   namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_THROUGHPUT_KG_H':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_THROUGHPUT_KG_H\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_ALARM_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_ALARM_STATE\"\n \
+  \     namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_HUMIDITY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_HUMIDITY_PCT\"\n\
+  \      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_HUMIDITY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_HUMIDITY_PCT\"\n\
+  \      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_EXHAUST_TEMP_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_EXHAUST_TEMP_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN2_EXHAUST_TEMP_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN2_EXHAUST_TEMP_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_BAKE_OVEN1_ALARM_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_BAKE_OVEN1_ALARM_STATE\"\n \
+  \     namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_MIX_WEIGH_HOPPER_1_TEMP_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_MIX_WEIGH_HOPPER_1_TEMP_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_PACK_FLOW_WRAPPER_PRESSURE_BAR':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_PACK_FLOW_WRAPPER_PRESSURE_BAR\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_COOL_COOLING_TABLE_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_COOL_COOLING_TABLE_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_FORM_ROTARY_MOLDER_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_FORM_ROTARY_MOLDER_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_FORM_WIRECUT_MACHINE_LOAD_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_FORM_WIRECUT_MACHINE_LOAD_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_A_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_A_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_A_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_B_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_B_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_RAW_B_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_A_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_A_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_A_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_B_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_B_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_SEMI_B_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_A_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_A_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_A_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_B_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_B_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_FORKLIFT_FIN_B_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_1_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_RAW_2_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_1_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_SEMI_2_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_1_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_CONVEYOR_FIN_2_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_SILO_1_FILL_LEVEL_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_SILO_1_FILL_LEVEL_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_SILO_1_TEMPERATURE_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_SILO_1_TEMPERATURE_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_SILO_2_FILL_LEVEL_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_SILO_2_FILL_LEVEL_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_SILO_2_TEMPERATURE_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_SILO_2_TEMPERATURE_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_LIQUID_SKID_FLOW_RATE_LH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_LIQUID_SKID_FLOW_RATE_LH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_CHI_STOR_LIQUID_SKID_PRESSURE_BAR':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_CHI_STOR_LIQUID_SKID_PRESSURE_BAR\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_A_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_A_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_A_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_B_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_B_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_RAW_B_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_A_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_A_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_A_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_B_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_B_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_SEMI_B_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_A_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_A_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_A_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_BATTERY_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_B_BATTERY_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_LOAD_KG':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_B_LOAD_KG\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_FORKLIFT_FIN_B_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_1_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_RAW_2_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_1_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_SEMI_2_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_1_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_OPERATING_STATE':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_CONVEYOR_FIN_2_OPERATING_STATE\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_SILO_1_FILL_LEVEL_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_SILO_1_FILL_LEVEL_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_SILO_1_TEMPERATURE_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_SILO_1_TEMPERATURE_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_SILO_2_FILL_LEVEL_PCT':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_SILO_2_FILL_LEVEL_PCT\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_SILO_2_TEMPERATURE_DEGC':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_SILO_2_TEMPERATURE_DEGC\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_LIQUID_SKID_FLOW_RATE_LH':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_LIQUID_SKID_FLOW_RATE_LH\"\
+  \n      namespace-uri: \"SM_Oven\"\n    'xws_user16_TS_ANT_STOR_LIQUID_SKID_PRESSURE_BAR':\n\
+  \      node-id: \"s=SM_Oven.Model.StaticTags.TS_ANT_STOR_LIQUID_SKID_PRESSURE_BAR\"\
+  \n      namespace-uri: \"SM_Oven\"\nsource:\n  endpoint-url: opc.tcp://localhost:59100\n\
+  \  auto-accept: true\n  queue-length: 10\n  browse-chunk: 1000\n  attributes-chunk:\
+  \ 1000\n  browse-throttling:\n    max-node-parallelism: 10\nlogger:\n  console:\n\
+  \    level: \"debug\"\n  file:\n    level: \"debug\"\n    path: \"logs/log.txt\"\
+  \n    retention-limit: 31\n    rolling-interval: \"day\"\nsubscriptions:\n  sampling-interval:\
+  \ 0\n  queue-length: 10\n"

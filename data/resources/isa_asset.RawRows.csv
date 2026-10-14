@@ -1,0 +1,86 @@
+key,externalId,name,asset_specific,parent_externalId,erp_id,cmms_id,description
+ENT_CPK_NA,ENT_CPK_NA,Enterprise Cookie North America,Enterprise,,ERP:NA,CMMS:ENT001,Enterprise for North America cookie operations and maintenance governance.
+SITE_CHI,SITE_CHI,Chicago Cookie Site,Site,ENT_CPK_NA,SAP:5100,CMMS:SITE001,Primary cookie manufacturing site in North America.
+ENT_CPK_EU,ENT_CPK_EU,Enterprise Cookie Europe,Enterprise,,ERP:EU,CMMS:ENT002,Enterprise for Europe cookie operations and maintenance governance.
+SITE_ANT,SITE_ANT,Antwerp Cookie Site,Site,ENT_CPK_EU,SAP:6100,CMMS:SITE002,Primary cookie manufacturing site in Europe.
+AREA_CHI_PROD,AREA_CHI_PROD,CHI Production Line Area,Area,SITE_CHI,S4:CHI200,CMMS:AREACHI1,Production line area for cookie conversion from ingredients to baked product.
+AREA_CHI_PACK,AREA_CHI_PACK,CHI Packaging Line Area,Area,SITE_CHI,S4:CHI300,CMMS:AREACHI2,Packaging line area for flow wrapping and palletizing.
+AREA_CHI_UTIL,AREA_CHI_UTIL,CHI Facility Utilities Area,Area,SITE_CHI,S4:CHI400,CMMS:AREACHI3,Utility systems supporting compressed air and site services.
+AREA_ANT_PROD,AREA_ANT_PROD,ANT Production Line Area,Area,SITE_ANT,S4:ANT200,CMMS:AREAANT1,Production line area for cookie conversion from ingredients to baked product.
+AREA_ANT_PACK,AREA_ANT_PACK,ANT Packaging Line Area,Area,SITE_ANT,S4:ANT300,CMMS:AREAANT2,Packaging line area for flow wrapping and palletizing.
+AREA_ANT_UTIL,AREA_ANT_UTIL,ANT Facility Utilities Area,Area,SITE_ANT,S4:ANT400,CMMS:AREAANT3,Utility systems supporting compressed air and site services.
+PC_CHI_MIX,PC_CHI_MIX,CHI Ingredient Dosing and Mixing Process Cell,ProcessCell,AREA_CHI_PROD,PC:CHIMIX,CMMS:PCCHIMIX,Ingredient Dosing and Mixing Process Cell for CHI site.
+PC_CHI_FORM,PC_CHI_FORM,CHI Dough Forming Process Cell,ProcessCell,AREA_CHI_PROD,PC:CHIFORM,CMMS:PCCHIFORM,Dough Forming Process Cell for CHI site.
+PC_CHI_BAKE,PC_CHI_BAKE,CHI Baking Oven Process Cell,ProcessCell,AREA_CHI_PROD,PC:CHIBAKE,CMMS:PCCHIBAKE,Baking Oven Process Cell for CHI site.
+PC_CHI_COOL,PC_CHI_COOL,CHI Cooling Process Cell,ProcessCell,AREA_CHI_PROD,PC:CHICOOL,CMMS:PCCHICOOL,Cooling Process Cell for CHI site.
+PC_CHI_PACK,PC_CHI_PACK,CHI Packaging Process Cell,ProcessCell,AREA_CHI_PACK,PC:CHIPACK,CMMS:PCCHIPACK,Packaging Process Cell for CHI site.
+PC_CHI_UTIL,PC_CHI_UTIL,CHI Facility Utilities Process Cell,ProcessCell,AREA_CHI_UTIL,PC:CHIUTIL,CMMS:PCCHIUTIL,Facility Utilities Process Cell for CHI site.
+PC_ANT_MIX,PC_ANT_MIX,ANT Ingredient Dosing and Mixing Process Cell,ProcessCell,AREA_ANT_PROD,PC:ANTMIX,CMMS:PCANTMIX,Ingredient Dosing and Mixing Process Cell for ANT site.
+PC_ANT_FORM,PC_ANT_FORM,ANT Dough Forming Process Cell,ProcessCell,AREA_ANT_PROD,PC:ANTFORM,CMMS:PCANTFORM,Dough Forming Process Cell for ANT site.
+PC_ANT_BAKE,PC_ANT_BAKE,ANT Baking Oven Process Cell,ProcessCell,AREA_ANT_PROD,PC:ANTBAKE,CMMS:PCANTBAKE,Baking Oven Process Cell for ANT site.
+PC_ANT_COOL,PC_ANT_COOL,ANT Cooling Process Cell,ProcessCell,AREA_ANT_PROD,PC:ANTCOOL,CMMS:PCANTCOOL,Cooling Process Cell for ANT site.
+PC_ANT_PACK,PC_ANT_PACK,ANT Packaging Process Cell,ProcessCell,AREA_ANT_PACK,PC:ANTPACK,CMMS:PCANTPACK,Packaging Process Cell for ANT site.
+PC_ANT_UTIL,PC_ANT_UTIL,ANT Facility Utilities Process Cell,ProcessCell,AREA_ANT_UTIL,PC:ANTUTIL,CMMS:PCANTUTIL,Facility Utilities Process Cell for ANT site.
+UNIT_CHI_MIX_1,UNIT_CHI_MIX_1,CHI Mixer 1 Unit,Unit,PC_CHI_MIX,U:CHI_MIX,CMMS:UCHI_MIX,ISA-88 unit supporting cookie process sequence.
+UNIT_CHI_FORM,UNIT_CHI_FORM,CHI Dough Forming Unit,Unit,PC_CHI_FORM,U:CHI_FORM,CMMS:UCHI_FORM,ISA-88 unit supporting cookie process sequence.
+UNIT_CHI_BAKE_OVEN1,UNIT_CHI_BAKE_OVEN1,CHI Tunnel Oven 1 Unit,Unit,PC_CHI_BAKE,U:CHI_BAKE,CMMS:UCHI_BAKE,ISA-88 unit supporting cookie process sequence.
+UNIT_CHI_COOL,UNIT_CHI_COOL,CHI Cooling Unit,Unit,PC_CHI_COOL,U:CHI_COOL,CMMS:UCHI_COOL,ISA-88 unit supporting cookie process sequence.
+UNIT_CHI_PACK,UNIT_CHI_PACK,CHI Packaging Unit,Unit,PC_CHI_PACK,U:CHI_PACK,CMMS:UCHI_PACK,ISA-88 unit supporting cookie process sequence.
+UNIT_CHI_UTIL,UNIT_CHI_UTIL,CHI Utilities Unit,Unit,PC_CHI_UTIL,U:CHI_UTIL,CMMS:UCHI_UTIL,ISA-88 unit supporting cookie process sequence.
+UNIT_ANT_MIX_1,UNIT_ANT_MIX_1,ANT Mixer 1 Unit,Unit,PC_ANT_MIX,U:ANT_MIX,CMMS:UANT_MIX,ISA-88 unit supporting cookie process sequence.
+UNIT_ANT_FORM,UNIT_ANT_FORM,ANT Dough Forming Unit,Unit,PC_ANT_FORM,U:ANT_FORM,CMMS:UANT_FORM,ISA-88 unit supporting cookie process sequence.
+UNIT_ANT_BAKE_OVEN1,UNIT_ANT_BAKE_OVEN1,ANT Tunnel Oven 1 Unit,Unit,PC_ANT_BAKE,U:ANT_BAKE,CMMS:UANT_BAKE,ISA-88 unit supporting cookie process sequence.
+UNIT_ANT_COOL,UNIT_ANT_COOL,ANT Cooling Unit,Unit,PC_ANT_COOL,U:ANT_COOL,CMMS:UANT_COOL,ISA-88 unit supporting cookie process sequence.
+UNIT_ANT_PACK,UNIT_ANT_PACK,ANT Packaging Unit,Unit,PC_ANT_PACK,U:ANT_PACK,CMMS:UANT_PACK,ISA-88 unit supporting cookie process sequence.
+UNIT_ANT_UTIL,UNIT_ANT_UTIL,ANT Utilities Unit,Unit,PC_ANT_UTIL,U:ANT_UTIL,CMMS:UANT_UTIL,ISA-88 unit supporting cookie process sequence.
+EM_CHI_MIX_DOS,EM_CHI_MIX_DOS,CHI Dosing and Mixing Module,EquipmentModule,UNIT_CHI_MIX_1,EM:CHI_MIX_DOS,CMMS:EMCHI_MIX_DOS,Equipment module grouping maintainable assets.
+EM_CHI_FORM_PREP,EM_CHI_FORM_PREP,CHI Form Prep EM,EquipmentModule,UNIT_CHI_FORM,EM:CHI_FORMING,CMMS:EMCHI_FORMING,Equipment module grouping maintainable assets.
+EM_CHI_BAKE_OVEN1,EM_CHI_BAKE_OVEN1,CHI Bake EM Oven 1,EquipmentModule,UNIT_CHI_BAKE_OVEN1,EM:CHI_BAKE,CMMS:EMCHI_BAKE,Equipment module grouping maintainable assets.
+EM_CHI_COOL,EM_CHI_COOL,CHI Cooling Module,EquipmentModule,UNIT_CHI_COOL,EM:CHI_COOL,CMMS:EMCHI_COOL,Equipment module grouping maintainable assets.
+EM_CHI_PACK_MAIN,EM_CHI_PACK_MAIN,CHI Packaging Main Module,EquipmentModule,UNIT_CHI_PACK,EM:CHI_PACK_MAIN,CMMS:EMCHI_PACK_MAIN,Equipment module grouping maintainable assets.
+EM_CHI_PACK_QA,EM_CHI_PACK_QA,CHI Packaging QA Module,EquipmentModule,UNIT_CHI_PACK,EM:CHI_PACK_QA,CMMS:EMCHI_PACK_QA,Equipment module grouping maintainable assets.
+EM_CHI_UTIL,EM_CHI_UTIL,CHI Utilities Module,EquipmentModule,UNIT_CHI_UTIL,EM:CHI_UTIL,CMMS:EMCHI_UTIL,Equipment module grouping maintainable assets.
+EM_ANT_MIX_DOS,EM_ANT_MIX_DOS,ANT Raw and Mixing Module,EquipmentModule,UNIT_ANT_MIX_1,EM:ANT_MIX_DOS,CMMS:EMANT_MIX_DOS,Equipment module grouping maintainable assets.
+EM_ANT_FORM_PREP,EM_ANT_FORM_PREP,ANT Form Prep EM,EquipmentModule,UNIT_ANT_FORM,EM:ANT_FORMING,CMMS:EMANT_FORMING,Equipment module grouping maintainable assets.
+EM_ANT_BAKE_OVEN1,EM_ANT_BAKE_OVEN1,ANT Bake EM Oven 1,EquipmentModule,UNIT_ANT_BAKE_OVEN1,EM:ANT_BAKE,CMMS:EMANT_BAKE,Equipment module grouping maintainable assets.
+EM_ANT_COOL,EM_ANT_COOL,ANT Cooling Module,EquipmentModule,UNIT_ANT_COOL,EM:ANT_COOL,CMMS:EMANT_COOL,Equipment module grouping maintainable assets.
+EM_ANT_PACK,EM_ANT_PACK,ANT Packaging Module,EquipmentModule,UNIT_ANT_PACK,EM:ANT_PACK,CMMS:EMANT_PACK,Equipment module grouping maintainable assets.
+EM_ANT_UTIL,EM_ANT_UTIL,ANT Utilities Module,EquipmentModule,UNIT_ANT_UTIL,EM:ANT_UTIL,CMMS:EMANT_UTIL,Equipment module grouping maintainable assets.
+AREA_CHI_STOR,AREA_CHI_STOR,CHI Material Storage Area,Area,SITE_CHI,S4:CHI500,CMMS:AREACHI4,Material storage area covering raw and semi-finished and finished goods for CHI site.
+PC_CHI_RAW_STOR,PC_CHI_RAW_STOR,CHI Raw Material Storage Process Cell,ProcessCell,AREA_CHI_STOR,PC:CHIRAWSTOR,CMMS:PCCHIRAWSTOR,Raw Material Storage Process Cell for CHI site.
+PC_CHI_SEMI_STOR,PC_CHI_SEMI_STOR,CHI Semi-Finished Goods Storage Process Cell,ProcessCell,AREA_CHI_STOR,PC:CHISEMI,CMMS:PCCHISEMI,Semi-Finished Goods Storage Process Cell for CHI site.
+PC_CHI_FIN_STOR,PC_CHI_FIN_STOR,CHI Finished Goods Storage Process Cell,ProcessCell,AREA_CHI_STOR,PC:CHIFIN,CMMS:PCCHIFIN,Finished Goods Storage Process Cell for CHI site.
+UNIT_CHI_LOGISTIC_RAW,UNIT_CHI_LOGISTIC_RAW,CHI Raw Material Logistic Unit,Unit,PC_CHI_RAW_STOR,U:CHI_LOG_RAW,CMMS:UCHI_LOG_RAW,ISA-88 logistic unit for raw material handling.
+UNIT_CHI_LOGISTIC_SEMI,UNIT_CHI_LOGISTIC_SEMI,CHI Semi-Finished Goods Logistic Unit,Unit,PC_CHI_SEMI_STOR,U:CHI_LOG_SEMI,CMMS:UCHI_LOG_SEMI,ISA-88 logistic unit for semi-finished goods handling.
+UNIT_CHI_LOGISTIC_FIN,UNIT_CHI_LOGISTIC_FIN,CHI Finished Goods Logistic Unit,Unit,PC_CHI_FIN_STOR,U:CHI_LOG_FIN,CMMS:UCHI_LOG_FIN,ISA-88 logistic unit for finished goods handling.
+EM_CHI_FORKLIFT_RAW,EM_CHI_FORKLIFT_RAW,CHI Raw Material Forklift Module,EquipmentModule,UNIT_CHI_LOGISTIC_RAW,EM:CHI_FORKLIFT_RAW,CMMS:EMCHI_FORKLIFT_RAW,Equipment module grouping raw material forklift assets.
+EM_CHI_CONVEYOR_RAW,EM_CHI_CONVEYOR_RAW,CHI Raw Material Conveyor Module,EquipmentModule,UNIT_CHI_LOGISTIC_RAW,EM:CHI_CONVEYOR_RAW,CMMS:EMCHI_CONVEYOR_RAW,Equipment module grouping raw material conveyor assets.
+EM_CHI_RAW_MAT_STORE,EM_CHI_RAW_MAT_STORE,CHI Raw Material Storage Module,EquipmentModule,UNIT_CHI_LOGISTIC_RAW,EM:CHI_RAW_MAT_STORE,CMMS:EMCHI_RAW_MAT_STORE,Equipment module grouping raw material storage assets (silos and liquid skid).
+EM_CHI_FORKLIFT_SEMI,EM_CHI_FORKLIFT_SEMI,CHI Semi-Finished Forklift Module,EquipmentModule,UNIT_CHI_LOGISTIC_SEMI,EM:CHI_FORKLIFT_SEMI,CMMS:EMCHI_FORKLIFT_SEMI,Equipment module grouping semi-finished goods forklift assets.
+EM_CHI_CONVEYOR_SEMI,EM_CHI_CONVEYOR_SEMI,CHI Semi-Finished Conveyor Module,EquipmentModule,UNIT_CHI_LOGISTIC_SEMI,EM:CHI_CONVEYOR_SEMI,CMMS:EMCHI_CONVEYOR_SEMI,Equipment module grouping semi-finished goods conveyor assets.
+EM_CHI_FORKLIFT_FIN,EM_CHI_FORKLIFT_FIN,CHI Finished Goods Forklift Module,EquipmentModule,UNIT_CHI_LOGISTIC_FIN,EM:CHI_FORKLIFT_FIN,CMMS:EMCHI_FORKLIFT_FIN,Equipment module grouping finished goods forklift assets.
+EM_CHI_CONVEYOR_FIN,EM_CHI_CONVEYOR_FIN,CHI Finished Goods Conveyor Module,EquipmentModule,UNIT_CHI_LOGISTIC_FIN,EM:CHI_CONVEYOR_FIN,CMMS:EMCHI_CONVEYOR_FIN,Equipment module grouping finished goods conveyor assets.
+AREA_ANT_STOR,AREA_ANT_STOR,ANT Material Storage Area,Area,SITE_ANT,S4:ANT500,CMMS:AREAANT4,Material storage area covering raw and semi-finished and finished goods for ANT site.
+PC_ANT_RAW_STOR,PC_ANT_RAW_STOR,ANT Raw Material Storage Process Cell,ProcessCell,AREA_ANT_STOR,PC:ANTRAWSTOR,CMMS:PCANTRAWSTOR,Raw Material Storage Process Cell for ANT site.
+PC_ANT_SEMI_STOR,PC_ANT_SEMI_STOR,ANT Semi-Finished Goods Storage Process Cell,ProcessCell,AREA_ANT_STOR,PC:ANTSEMI,CMMS:PCANTSEMI,Semi-Finished Goods Storage Process Cell for ANT site.
+PC_ANT_FIN_STOR,PC_ANT_FIN_STOR,ANT Finished Goods Storage Process Cell,ProcessCell,AREA_ANT_STOR,PC:ANTFIN,CMMS:PCANTFIN,Finished Goods Storage Process Cell for ANT site.
+UNIT_ANT_LOGISTIC_RAW,UNIT_ANT_LOGISTIC_RAW,ANT Raw Material Logistic Unit,Unit,PC_ANT_RAW_STOR,U:ANT_LOG_RAW,CMMS:UANT_LOG_RAW,ISA-88 logistic unit for raw material handling.
+UNIT_ANT_LOGISTIC_SEMI,UNIT_ANT_LOGISTIC_SEMI,ANT Semi-Finished Goods Logistic Unit,Unit,PC_ANT_SEMI_STOR,U:ANT_LOG_SEMI,CMMS:UANT_LOG_SEMI,ISA-88 logistic unit for semi-finished goods handling.
+UNIT_ANT_LOGISTIC_FIN,UNIT_ANT_LOGISTIC_FIN,ANT Finished Goods Logistic Unit,Unit,PC_ANT_FIN_STOR,U:ANT_LOG_FIN,CMMS:UANT_LOG_FIN,ISA-88 logistic unit for finished goods handling.
+EM_ANT_FORKLIFT_RAW,EM_ANT_FORKLIFT_RAW,ANT Raw Material Forklift Module,EquipmentModule,UNIT_ANT_LOGISTIC_RAW,EM:ANT_FORKLIFT_RAW,CMMS:EMANT_FORKLIFT_RAW,Equipment module grouping raw material forklift assets.
+EM_ANT_CONVEYOR_RAW,EM_ANT_CONVEYOR_RAW,ANT Raw Material Conveyor Module,EquipmentModule,UNIT_ANT_LOGISTIC_RAW,EM:ANT_CONVEYOR_RAW,CMMS:EMANT_CONVEYOR_RAW,Equipment module grouping raw material conveyor assets.
+EM_ANT_RAW_MAT_STORE,EM_ANT_RAW_MAT_STORE,ANT Raw Material Storage Module,EquipmentModule,UNIT_ANT_LOGISTIC_RAW,EM:ANT_RAW_MAT_STORE,CMMS:EMANT_RAW_MAT_STORE,Equipment module grouping raw material storage assets (silos and liquid skid).
+EM_ANT_FORKLIFT_SEMI,EM_ANT_FORKLIFT_SEMI,ANT Semi-Finished Forklift Module,EquipmentModule,UNIT_ANT_LOGISTIC_SEMI,EM:ANT_FORKLIFT_SEMI,CMMS:EMANT_FORKLIFT_SEMI,Equipment module grouping semi-finished goods forklift assets.
+EM_ANT_CONVEYOR_SEMI,EM_ANT_CONVEYOR_SEMI,ANT Semi-Finished Conveyor Module,EquipmentModule,UNIT_ANT_LOGISTIC_SEMI,EM:ANT_CONVEYOR_SEMI,CMMS:EMANT_CONVEYOR_SEMI,Equipment module grouping semi-finished goods conveyor assets.
+EM_ANT_FORKLIFT_FIN,EM_ANT_FORKLIFT_FIN,ANT Finished Goods Forklift Module,EquipmentModule,UNIT_ANT_LOGISTIC_FIN,EM:ANT_FORKLIFT_FIN,CMMS:EMANT_FORKLIFT_FIN,Equipment module grouping finished goods forklift assets.
+EM_ANT_CONVEYOR_FIN,EM_ANT_CONVEYOR_FIN,ANT Finished Goods Conveyor Module,EquipmentModule,UNIT_ANT_LOGISTIC_FIN,EM:ANT_CONVEYOR_FIN,CMMS:EMANT_CONVEYOR_FIN,Equipment module grouping finished goods conveyor assets.
+UNIT_CHI_BAKE_OVEN2,UNIT_CHI_BAKE_OVEN2,CHI Tunnel Oven 2 Unit,Unit,PC_CHI_BAKE,ERP:CHI_U_BAKE2,CMMS:CHI_BAKE2,ISA-88 Unit for independently operable CHI Tunnel Oven 2 (EQ_CHI_015).
+UNIT_ANT_BAKE_OVEN2,UNIT_ANT_BAKE_OVEN2,ANT Tunnel Oven 2 Unit,Unit,PC_ANT_BAKE,ERP:ANT_U_BAKE2,CMMS:ANT_BAKE2,ISA-88 Unit for independently operable ANT Tunnel Oven 2 (EQ_ANT_015).
+UNIT_CHI_MIX_2,UNIT_CHI_MIX_2,CHI Mixer 2 Unit,Unit,PC_CHI_MIX,ERP:CHI_U_MIX2,CMMS:CHI_MIX2,ISA-88 Unit for independently operable CHI Industrial Mixer 2 and Weigh Hopper 2.
+UNIT_ANT_MIX_2,UNIT_ANT_MIX_2,ANT Mixer 2 Unit,Unit,PC_ANT_MIX,ERP:ANT_U_MIX2,CMMS:ANT_MIX2,ISA-88 Unit for independently operable ANT Industrial Mixer 2 and Weigh Hopper 2.
+EM_CHI_BAKE_OVEN2,EM_CHI_BAKE_OVEN2,CHI Bake EM Oven 2,EquipmentModule,UNIT_CHI_BAKE_OVEN2,ERP:CHI_EM_BAKE2,CMMS:CHI_EM_BAKE2,Equipment Module for CHI Tunnel Oven 2 containing zone and burner controls.
+EM_ANT_BAKE_OVEN2,EM_ANT_BAKE_OVEN2,ANT Bake EM Oven 2,EquipmentModule,UNIT_ANT_BAKE_OVEN2,ERP:ANT_EM_BAKE2,CMMS:ANT_EM_BAKE2,Equipment Module for ANT Tunnel Oven 2 containing zone and burner controls.
+EM_CHI_MIX_DOS_2,EM_CHI_MIX_DOS_2,CHI Mix Dosing EM 2,EquipmentModule,UNIT_CHI_MIX_2,ERP:CHI_EM_MIX2,CMMS:CHI_EM_MIX2,Equipment Module for CHI Industrial Mixer 2 and Weigh Hopper 2.
+EM_ANT_MIX_DOS_2,EM_ANT_MIX_DOS_2,ANT Mix Dosing EM 2,EquipmentModule,UNIT_ANT_MIX_2,ERP:ANT_EM_MIX2,CMMS:ANT_EM_MIX2,Equipment Module for ANT Industrial Mixer 2 and Weigh Hopper 2.
+EM_CHI_FORM_CUT,EM_CHI_FORM_CUT,CHI Form Cutting EM,EquipmentModule,UNIT_CHI_FORM,ERP:CHI_EM_FCUT,CMMS:CHI_EM_FCUT,Equipment Module for CHI Rotary Molder and WireCut Machine (cutting sub-process).
+EM_ANT_FORM_CUT,EM_ANT_FORM_CUT,ANT Form Cutting EM,EquipmentModule,UNIT_ANT_FORM,ERP:ANT_EM_FCUT,CMMS:ANT_EM_FCUT,Equipment Module for ANT Rotary Molder and WireCut Machine (cutting sub-process).

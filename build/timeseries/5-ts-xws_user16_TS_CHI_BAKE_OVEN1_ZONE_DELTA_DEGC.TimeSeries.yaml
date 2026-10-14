@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_CHI_BAKE_OVEN1_ZONE_DELTA_DEGC
+name: CHI Oven 1 Zone Delta Degc
+description: Oven-centered production signal for anomaly, downtime, and quality impact
+  correlation.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: degC
+isString: false
+isStep: false

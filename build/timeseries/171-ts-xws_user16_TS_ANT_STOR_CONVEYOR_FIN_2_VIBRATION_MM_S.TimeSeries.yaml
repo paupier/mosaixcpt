@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S
+name: ANT Finished Goods Conveyor 2 Vibration Mm S
+description: Belt frame vibration for storage conveyor.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: mm/s
+isString: false
+isStep: false

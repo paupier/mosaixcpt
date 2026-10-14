@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_ANT_BAKE_OVEN1_MOTOR_CURRENT_A
+name: ANT Oven 1 Motor Current A
+description: Oven-centered production signal for anomaly, downtime, and quality impact
+  correlation.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: A
+isString: false
+isStep: false

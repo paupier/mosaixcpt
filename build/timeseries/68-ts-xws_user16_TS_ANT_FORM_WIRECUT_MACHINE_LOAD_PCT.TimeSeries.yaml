@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_ANT_FORM_WIRECUT_MACHINE_LOAD_PCT
+name: ANT WireCut Machine Load Pct
+description: Production-line support signal correlated with oven incidents and throughput
+  effects.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: '%'
+isString: false
+isStep: false

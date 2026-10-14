@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH
+name: CHI Semi-Finished Forklift A Travel Speed Kmh
+description: Forklift travel speed for storage operations.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: km/h
+isString: false
+isStep: false

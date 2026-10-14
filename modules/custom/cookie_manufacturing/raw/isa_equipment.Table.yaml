@@ -1,0 +1,2 @@
+- dbName: {{ rawDatabaseName }}
+  tableName: isa_equipment

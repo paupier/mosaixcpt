@@ -1,0 +1,6 @@
+kind: RawRows
+type: rawTable
+table:
+  dbName: xws_user16_rawdb_isa_mfg
+  tableName: isa_lot
+key: key

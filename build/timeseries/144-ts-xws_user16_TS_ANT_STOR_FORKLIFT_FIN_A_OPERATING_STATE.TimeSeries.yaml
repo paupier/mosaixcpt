@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_OPERATING_STATE
+name: ANT Finished Goods Forklift A Operating State
+description: Discrete forklift operating state for maintenance and downtime alignment.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: state
+isString: false
+isStep: true

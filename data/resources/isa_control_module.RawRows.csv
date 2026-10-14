@@ -1,0 +1,57 @@
+key,externalId,control_module_id,control_module_name,control_type,controller_address,equipment_module_externalId,description
+CM_COOKIE_001,CM_COOKIE_001,CM_COOKIE_001,Oven Zone Control 1,PID,PLC-01/DB1200,EM_CHI_BAKE_OVEN1,Oven Zone Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_002,CM_COOKIE_002,CM_COOKIE_002,Oven Burner Management 1,Sequence,PLC-02/DB1201,EM_CHI_BAKE_OVEN1,Oven Burner Management supporting cookie line stability and downtime prevention.
+CM_COOKIE_003,CM_COOKIE_003,CM_COOKIE_003,Cooling Conveyor Control 1,Interlock,PLC-03/DB1202,EM_CHI_COOL,Cooling Conveyor Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_004,CM_COOKIE_004,CM_COOKIE_004,Flow Wrapper Seal Control 1,MotorControl,PLC-04/DB1203,EM_CHI_PACK_MAIN,Flow Wrapper Seal Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_005,CM_COOKIE_005,CM_COOKIE_005,Mixer Speed Cascade 1,Safety,PLC-05/DB1204,EM_CHI_MIX_DOS,Mixer Speed Cascade supporting cookie line stability and downtime prevention.
+CM_COOKIE_006,CM_COOKIE_006,CM_COOKIE_006,Compressor Pressure Loop 1,BatchControl,PLC-06/DB1205,EM_CHI_UTIL,Compressor Pressure Loop supporting cookie line stability and downtime prevention.
+CM_COOKIE_007,CM_COOKIE_007,CM_COOKIE_007,WireCut Timing Control 1,PID,PLC-07/DB1206,EM_CHI_FORM_CUT,WireCut Timing Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_008,CM_COOKIE_008,CM_COOKIE_008,Rotary Molder Index Control 1,Sequence,PLC-08/DB1207,EM_CHI_FORM_CUT,Rotary Molder Index Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_009,CM_COOKIE_009,CM_COOKIE_009,Oven Zone Control 2,Interlock,PLC-09/DB1208,EM_CHI_BAKE_OVEN2,Oven Zone Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_010,CM_COOKIE_010,CM_COOKIE_010,Oven Burner Management 2,MotorControl,PLC-10/DB1209,EM_CHI_BAKE_OVEN2,Oven Burner Management supporting cookie line stability and downtime prevention.
+CM_COOKIE_011,CM_COOKIE_011,CM_COOKIE_011,Cooling Conveyor Control 2,Safety,PLC-11/DB1210,EM_CHI_COOL,Cooling Conveyor Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_012,CM_COOKIE_012,CM_COOKIE_012,Flow Wrapper Seal Control 2,BatchControl,PLC-12/DB1211,EM_CHI_PACK_MAIN,Flow Wrapper Seal Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_013,CM_COOKIE_013,CM_COOKIE_013,Mixer Speed Cascade 2,PID,PLC-13/DB1212,EM_CHI_MIX_DOS,Mixer Speed Cascade supporting cookie line stability and downtime prevention.
+CM_COOKIE_014,CM_COOKIE_014,CM_COOKIE_014,Compressor Pressure Loop 2,Sequence,PLC-14/DB1213,EM_CHI_UTIL,Compressor Pressure Loop supporting cookie line stability and downtime prevention.
+CM_COOKIE_015,CM_COOKIE_015,CM_COOKIE_015,WireCut Timing Control 2,Interlock,PLC-15/DB1214,EM_CHI_FORM_PREP,WireCut Timing Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_016,CM_COOKIE_016,CM_COOKIE_016,Rotary Molder Index Control 2,MotorControl,PLC-16/DB1215,EM_CHI_FORM_PREP,Rotary Molder Index Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_017,CM_COOKIE_017,CM_COOKIE_017,Oven Zone Control 3,Safety,PLC-01/DB1216,EM_CHI_BAKE_OVEN1,Oven Zone Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_018,CM_COOKIE_018,CM_COOKIE_018,Oven Burner Management 3,BatchControl,PLC-02/DB1217,EM_CHI_BAKE_OVEN1,Oven Burner Management supporting cookie line stability and downtime prevention.
+CM_COOKIE_019,CM_COOKIE_019,CM_COOKIE_019,Cooling Conveyor Control 3,PID,PLC-03/DB1218,EM_CHI_COOL,Cooling Conveyor Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_020,CM_COOKIE_020,CM_COOKIE_020,Flow Wrapper Seal Control 3,Sequence,PLC-04/DB1219,EM_CHI_PACK_MAIN,Flow Wrapper Seal Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_021,CM_COOKIE_021,CM_COOKIE_021,Mixer Speed Cascade 3,Interlock,PLC-05/DB1220,EM_CHI_MIX_DOS,Mixer Speed Cascade supporting cookie line stability and downtime prevention.
+CM_COOKIE_022,CM_COOKIE_022,CM_COOKIE_022,Compressor Pressure Loop 3,MotorControl,PLC-06/DB1221,EM_CHI_UTIL,Compressor Pressure Loop supporting cookie line stability and downtime prevention.
+CM_COOKIE_023,CM_COOKIE_023,CM_COOKIE_023,WireCut Timing Control 3,Safety,PLC-07/DB1222,EM_CHI_FORM_PREP,WireCut Timing Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_024,CM_COOKIE_024,CM_COOKIE_024,Rotary Molder Index Control 3,BatchControl,PLC-08/DB1223,EM_CHI_FORM_PREP,Rotary Molder Index Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_025,CM_COOKIE_025,CM_COOKIE_025,Oven Zone Control 4,PID,PLC-09/DB1224,EM_CHI_BAKE_OVEN2,Oven Zone Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_026,CM_COOKIE_026,CM_COOKIE_026,Oven Burner Management 4,Sequence,PLC-10/DB1225,EM_CHI_BAKE_OVEN2,Oven Burner Management supporting cookie line stability and downtime prevention.
+CM_COOKIE_027,CM_COOKIE_027,CM_COOKIE_027,Cooling Conveyor Control 4,Interlock,PLC-11/DB1226,EM_CHI_COOL,Cooling Conveyor Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_028,CM_COOKIE_028,CM_COOKIE_028,Flow Wrapper Seal Control 4,MotorControl,PLC-12/DB1227,EM_CHI_PACK_MAIN,Flow Wrapper Seal Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_029,CM_COOKIE_029,CM_COOKIE_029,Mixer Speed Cascade 4,Safety,PLC-13/DB1228,EM_CHI_MIX_DOS,Mixer Speed Cascade supporting cookie line stability and downtime prevention.
+CM_COOKIE_030,CM_COOKIE_030,CM_COOKIE_030,Compressor Pressure Loop 4,BatchControl,PLC-14/DB1229,EM_CHI_UTIL,Compressor Pressure Loop supporting cookie line stability and downtime prevention.
+CM_COOKIE_031,CM_COOKIE_031,CM_COOKIE_031,WireCut Timing Control 4,PID,PLC-15/DB1230,EM_CHI_FORM_PREP,WireCut Timing Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_032,CM_COOKIE_032,CM_COOKIE_032,Rotary Molder Index Control 4,Sequence,PLC-16/DB1231,EM_CHI_FORM_PREP,Rotary Molder Index Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_033,CM_COOKIE_033,CM_COOKIE_033,Oven Zone Control 5,Interlock,PLC-01/DB1232,EM_ANT_BAKE_OVEN1,Oven Zone Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_034,CM_COOKIE_034,CM_COOKIE_034,Oven Burner Management 5,MotorControl,PLC-02/DB1233,EM_ANT_BAKE_OVEN1,Oven Burner Management supporting cookie line stability and downtime prevention.
+CM_COOKIE_035,CM_COOKIE_035,CM_COOKIE_035,Cooling Conveyor Control 5,Safety,PLC-03/DB1234,EM_ANT_COOL,Cooling Conveyor Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_036,CM_COOKIE_036,CM_COOKIE_036,Flow Wrapper Seal Control 5,BatchControl,PLC-04/DB1235,EM_ANT_PACK,Flow Wrapper Seal Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_037,CM_COOKIE_037,CM_COOKIE_037,Mixer Speed Cascade 5,PID,PLC-05/DB1236,EM_ANT_MIX_DOS,Mixer Speed Cascade supporting cookie line stability and downtime prevention.
+CM_COOKIE_038,CM_COOKIE_038,CM_COOKIE_038,Compressor Pressure Loop 5,Sequence,PLC-06/DB1237,EM_ANT_UTIL,Compressor Pressure Loop supporting cookie line stability and downtime prevention.
+CM_COOKIE_039,CM_COOKIE_039,CM_COOKIE_039,WireCut Timing Control 5,Interlock,PLC-07/DB1238,EM_ANT_FORM_CUT,WireCut Timing Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_040,CM_COOKIE_040,CM_COOKIE_040,Rotary Molder Index Control 5,MotorControl,PLC-08/DB1239,EM_ANT_FORM_CUT,Rotary Molder Index Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_041,CM_COOKIE_041,CM_COOKIE_041,Oven Zone Control 6,Safety,PLC-09/DB1240,EM_ANT_BAKE_OVEN2,Oven Zone Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_042,CM_COOKIE_042,CM_COOKIE_042,Oven Burner Management 6,BatchControl,PLC-10/DB1241,EM_ANT_BAKE_OVEN2,Oven Burner Management supporting cookie line stability and downtime prevention.
+CM_COOKIE_043,CM_COOKIE_043,CM_COOKIE_043,Cooling Conveyor Control 6,PID,PLC-11/DB1242,EM_ANT_COOL,Cooling Conveyor Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_044,CM_COOKIE_044,CM_COOKIE_044,Flow Wrapper Seal Control 6,Sequence,PLC-12/DB1243,EM_ANT_PACK,Flow Wrapper Seal Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_045,CM_COOKIE_045,CM_COOKIE_045,Mixer Speed Cascade 6,Interlock,PLC-13/DB1244,EM_ANT_MIX_DOS,Mixer Speed Cascade supporting cookie line stability and downtime prevention.
+CM_COOKIE_046,CM_COOKIE_046,CM_COOKIE_046,Compressor Pressure Loop 6,MotorControl,PLC-14/DB1245,EM_ANT_UTIL,Compressor Pressure Loop supporting cookie line stability and downtime prevention.
+CM_COOKIE_047,CM_COOKIE_047,CM_COOKIE_047,WireCut Timing Control 6,Safety,PLC-15/DB1246,EM_ANT_FORM_PREP,WireCut Timing Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_048,CM_COOKIE_048,CM_COOKIE_048,Rotary Molder Index Control 6,BatchControl,PLC-16/DB1247,EM_ANT_FORM_PREP,Rotary Molder Index Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_049,CM_COOKIE_049,CM_COOKIE_049,Oven Zone Control 7,PID,PLC-01/DB1248,EM_ANT_BAKE_OVEN1,Oven Zone Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_050,CM_COOKIE_050,CM_COOKIE_050,Oven Burner Management 7,Sequence,PLC-02/DB1249,EM_ANT_BAKE_OVEN1,Oven Burner Management supporting cookie line stability and downtime prevention.
+CM_COOKIE_051,CM_COOKIE_051,CM_COOKIE_051,Cooling Conveyor Control 7,Interlock,PLC-03/DB1250,EM_ANT_COOL,Cooling Conveyor Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_052,CM_COOKIE_052,CM_COOKIE_052,Flow Wrapper Seal Control 7,MotorControl,PLC-04/DB1251,EM_ANT_PACK,Flow Wrapper Seal Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_053,CM_COOKIE_053,CM_COOKIE_053,Mixer Speed Cascade 7,Safety,PLC-05/DB1252,EM_ANT_MIX_DOS,Mixer Speed Cascade supporting cookie line stability and downtime prevention.
+CM_COOKIE_054,CM_COOKIE_054,CM_COOKIE_054,Compressor Pressure Loop 7,BatchControl,PLC-06/DB1253,EM_ANT_UTIL,Compressor Pressure Loop supporting cookie line stability and downtime prevention.
+CM_COOKIE_055,CM_COOKIE_055,CM_COOKIE_055,WireCut Timing Control 7,PID,PLC-07/DB1254,EM_ANT_FORM_CUT,WireCut Timing Control supporting cookie line stability and downtime prevention.
+CM_COOKIE_056,CM_COOKIE_056,CM_COOKIE_056,Rotary Molder Index Control 7,Sequence,PLC-08/DB1255,EM_ANT_FORM_CUT,Rotary Molder Index Control supporting cookie line stability and downtime prevention.

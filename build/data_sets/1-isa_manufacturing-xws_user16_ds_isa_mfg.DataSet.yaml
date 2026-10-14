@@ -1,0 +1,6 @@
+externalId: xws_user16_ds_isa_mfg
+name: xws_user16_ISA Manufacturing
+description: Dataset for ISA Manufacturing (TS, transform. and workflow)
+writeProtected: false
+metadata:
+  origin: datamosaix-toolkit

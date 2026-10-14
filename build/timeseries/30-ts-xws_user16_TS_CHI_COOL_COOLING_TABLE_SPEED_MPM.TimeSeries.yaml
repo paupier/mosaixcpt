@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_CHI_COOL_COOLING_TABLE_SPEED_MPM
+name: CHI Cooling Table Speed Mpm
+description: Production-line support signal correlated with oven incidents and throughput
+  effects.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: m/min
+isString: false
+isStep: false

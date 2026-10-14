@@ -1,0 +1,14 @@
+externalId: '{{ userPrefix }}isa_asset_tr'
+name: '{{ userPrefix }}ISA_Asset'
+destination:
+  dataModel:
+    space: {{ isaSchemaSpace }}
+    externalId: {{ edmDataModelExternalId }}
+    version: v1
+    destinationType: ISAAsset
+  instanceSpace: {{ isaInstanceSpace }}
+  type: instances
+dataSetExternalId: {{ datasetExternalId }}
+ignoreNullFields: true
+isPublic: true
+conflictMode: upsert

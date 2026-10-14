@@ -1,0 +1,16 @@
+externalId: '{{ userPrefix }}recipe_tr'
+name: '{{ userPrefix }}Recipe'
+destination:
+  dataModel:
+    space: {{ isaSchemaSpace }}
+    externalId: {{ edmDataModelExternalId }}
+    version: v1
+    destinationType: Recipe
+  instanceSpace: {{ isaInstanceSpace }}
+  type: instances
+dataSetExternalId: {{ datasetExternalId }}
+ignoreNullFields: true
+isPublic: true
+conflictMode: upsert
+
+

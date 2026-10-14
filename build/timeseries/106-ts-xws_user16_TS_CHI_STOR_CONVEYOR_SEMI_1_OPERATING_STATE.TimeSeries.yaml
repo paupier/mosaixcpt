@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_OPERATING_STATE
+name: CHI Semi-Finished Conveyor 1 Operating State
+description: Discrete conveyor operating state for maintenance and downtime alignment.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: state
+isString: false
+isStep: true

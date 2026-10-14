@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_ANT_PACK_FLOW_WRAPPER_PRESSURE_BAR
+name: ANT Flow Wrapper Pressure Bar
+description: Production-line support signal correlated with oven incidents and throughput
+  effects.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: bar
+isString: false
+isStep: false

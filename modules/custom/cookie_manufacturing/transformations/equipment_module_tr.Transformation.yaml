@@ -1,0 +1,14 @@
+externalId: '{{ userPrefix }}equipment_module_tr'
+name: '{{ userPrefix }}EquipmentModule'
+destination:
+  dataModel:
+    space: {{ isaSchemaSpace }}
+    externalId: {{ edmDataModelExternalId }}
+    version: v1
+    destinationType: EquipmentModule
+  instanceSpace: {{ isaInstanceSpace }}
+  type: instances
+dataSetExternalId: {{ datasetExternalId }}
+ignoreNullFields: true
+isPublic: true
+conflictMode: upsert

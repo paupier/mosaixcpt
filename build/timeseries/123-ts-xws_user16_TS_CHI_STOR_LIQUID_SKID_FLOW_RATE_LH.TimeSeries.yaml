@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_CHI_STOR_LIQUID_SKID_FLOW_RATE_LH
+name: CHI Liquid Ingredient Skid Flow Rate Lh
+description: Liquid ingredient flow rate from dosing skid.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: l/h
+isString: false
+isStep: false

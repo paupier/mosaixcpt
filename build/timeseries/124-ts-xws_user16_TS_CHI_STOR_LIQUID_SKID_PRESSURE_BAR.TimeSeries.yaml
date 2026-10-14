@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_CHI_STOR_LIQUID_SKID_PRESSURE_BAR
+name: CHI Liquid Ingredient Skid Pressure Bar
+description: Process line pressure on liquid ingredient skid.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: bar
+isString: false
+isStep: false

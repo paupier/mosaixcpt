@@ -1,0 +1,14 @@
+externalId: xws_user16_files_tr
+name: xws_user16_ISAFile
+destination:
+  dataModel:
+    space: xws_user16_spc_dm_isa_mfg
+    externalId: xws_user16_dm_isa_mfg
+    version: v1
+    destinationType: ISAFile
+  instanceSpace: xws_user16_spc_inst_isa_mfg
+  type: instances
+dataSetExternalId: xws_user16_ds_isa_mfg
+ignoreNullFields: true
+isPublic: true
+conflictMode: upsert

@@ -1,6 +1,6 @@
 environment:
   name: dev
-  project: <my-project-dev>
+  project: ptec-04
   validation-type: dev
   selected:
   - modules/
@@ -8,5 +8,53 @@ environment:
 variables:
   modules:
     custom:
-      my_module:
-        my_var: my_value
+      cookie_manufacturing:
+        # User-specific prefix for shared sandbox deployments 
+        # Some External IDs in FTDM accept only '_' and names only accept '-'
+        userPrefix: xws_user16_
+        userPrefixDash: xws-user16-
+
+        # Instance space for the cookie manufacturing data instances
+        # This space contains actual entity instances (assets, batches, work orders, etc.)        
+        isaInstanceSpace: xws_user16_spc_inst_isa_mfg
+
+        # Schema space for the cookie manufacturing views and containers
+        # This space contains all ISA-95/ISA-88 data model definitions
+        isaSchemaSpace: xws_user16_spc_dm_isa_mfg
+
+        # Enterprise Data Model external ID for the cookie manufacturing domain
+        edmDataModelExternalId: xws_user16_dm_isa_mfg
+
+        # Version of the cookie manufacturing views
+        # Used in all view definitions for versioning
+        viewVersion: v1
+
+        # RAW database name for cookie manufacturing seed data
+        rawDatabaseName: xws_user16_rawdb_isa_mfg
+
+        # Dataset external ID for ISA manufacturing timeseries, transform. and workflows
+        # This dataset is used for lineage tracking and access control
+        datasetExternalId: xws_user16_ds_isa_mfg
+
+        # Complete workflow external ID used to orchestrate all cookie manufacturing transformations
+        workflowExternalId: xws_user16_wf_complete_isa_mfg
+
+        # Version of the cookie manufacturing workflow - used in workflow definitions for versioning
+        workflowVersion: '1'
+
+        # Location filter external ID used for searching and filtering data in the EDM
+        locationFilterExternalId: xws_user16_lf_isa_mfg
+
+        # External ID for the OPC-UA extraction pipeline
+        extractionPipelineExternalId: xws_user16_ep_opcua_isa_mfg
+
+        # External ID for the Fiix work order ingestion function
+        functionExternalId: xws_user16_fiix_ingest
+        #Fiix API credentials - generated from Fiix Connect Management settings
+        FIIX_SUBDOMAIN: "${FIIX_SUBDOMAIN}"
+        FIIX_APP_KEY: "${FIIX_APP_KEY}"
+        FIIX_ACCESS_KEY: "${FIIX_ACCESS_KEY}"
+        FIIX_SECRET_KEY: "${FIIX_SECRET_KEY}"
+        # OIDC credentials for the Fiix ingest function schedule - generated from DataMosaix Applications
+        scheduleClientId: "${SCHEDULE_CLIENT_ID}"
+        scheduleClientSecret: "${SCHEDULE_CLIENT_SECRET}"

@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_OPERATING_STATE
+name: ANT Raw Material Conveyor 1 Operating State
+description: Discrete conveyor operating state for maintenance and downtime alignment.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: state
+isString: false
+isStep: true

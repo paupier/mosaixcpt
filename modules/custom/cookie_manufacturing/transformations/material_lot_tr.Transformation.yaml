@@ -1,0 +1,16 @@
+externalId: '{{ userPrefix }}material_lot_tr'
+name: '{{ userPrefix }}MaterialLot'
+destination:
+  dataModel:
+    space: {{ isaSchemaSpace }}
+    externalId: {{ edmDataModelExternalId }}
+    version: v1
+    destinationType: MaterialLot
+  instanceSpace: {{ isaInstanceSpace }}
+  type: instances
+dataSetExternalId: {{ datasetExternalId }}
+ignoreNullFields: true
+isPublic: true
+conflictMode: upsert
+
+

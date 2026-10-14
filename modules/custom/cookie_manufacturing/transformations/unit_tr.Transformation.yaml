@@ -1,0 +1,15 @@
+externalId: '{{ userPrefix }}unit_tr'
+name: '{{ userPrefix }}Unit'
+destination:
+  dataModel:
+    space: {{ isaSchemaSpace }}
+    externalId: {{ edmDataModelExternalId }}
+    version: v1
+    destinationType: Unit
+  instanceSpace: {{ isaInstanceSpace }}
+  type: instances
+dataSetExternalId: {{ datasetExternalId }}
+ignoreNullFields: true
+isPublic: true
+conflictMode: upsert
+

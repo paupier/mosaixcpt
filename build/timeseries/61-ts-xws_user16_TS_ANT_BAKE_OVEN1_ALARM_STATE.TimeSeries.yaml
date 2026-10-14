@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_ANT_BAKE_OVEN1_ALARM_STATE
+name: ANT Oven 1 Alarm State
+description: Discrete oven state for downtime and corrective maintenance alignment.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: state
+isString: false
+isStep: true

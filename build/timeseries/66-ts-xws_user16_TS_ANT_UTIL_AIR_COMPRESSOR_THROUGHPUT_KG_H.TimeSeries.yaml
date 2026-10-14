@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_ANT_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H
+name: ANT Air Compressor Throughput Kg H
+description: Production-line support signal correlated with oven incidents and throughput
+  effects.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: kg/h
+isString: false
+isStep: false

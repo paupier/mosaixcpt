@@ -1,0 +1,10 @@
+externalId: {{ locationFilterExternalId }}
+name: '{{ userPrefix }}ISA-Location-EDM'
+description: 'This is the location ISA Manufacturing Location Enterprise Data Model (EDM), including all views and interfaces.'
+dataModels:
+  - externalId: {{ edmDataModelExternalId }}
+    space: {{ isaSchemaSpace }}
+    version: v1
+instanceSpaces:
+  - {{ isaInstanceSpace }}
+dataModelingType: DATA_MODELING_ONLY

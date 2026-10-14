@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_CHI_BAKE_OVEN2_AIRFLOW_M3H
+name: CHI Oven 2 Airflow M3H
+description: Oven-centered production signal for anomaly, downtime, and quality impact
+  correlation.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: m3/h
+isString: false
+isStep: false

@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM
+name: CHI Raw Material Conveyor 2 Belt Speed Mpm
+description: Conveyor belt speed for storage operations.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: m/min
+isString: false
+isStep: false

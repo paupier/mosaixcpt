@@ -1,0 +1,14 @@
+externalId: '{{ userPrefix }}work_order_timeseries_tr'
+name: '{{ userPrefix }}WorkOrderTimeSeries'
+destination:
+  dataModel:
+    space: {{ isaSchemaSpace }}
+    externalId: {{ edmDataModelExternalId }}
+    version: v1
+    destinationType: WorkOrder
+  instanceSpace: {{ isaInstanceSpace }}
+  type: instances
+dataSetExternalId: {{ datasetExternalId }}
+ignoreNullFields: true
+isPublic: true
+conflictMode: upsert

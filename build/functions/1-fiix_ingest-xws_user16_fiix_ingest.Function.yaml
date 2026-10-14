@@ -1,0 +1,15 @@
+externalId: xws_user16_fiix_ingest
+name: xws_user16_fiix_ingest
+runtime: py313
+owner: xws_user16_ from Milton Keynes
+dataSetExternalId: xws_user16_ds_isa_mfg
+description: Imports Fiix work orders into CDF RAW isa_work_order table
+secrets:
+  fiix-subdomain: ${FIIX_SUBDOMAIN}
+  fiix-app-key: ${FIIX_APP_KEY}
+  fiix-access-key: ${FIIX_ACCESS_KEY}
+  fiix-secret-key: ${FIIX_SECRET_KEY}
+  cdf-raw-db: xws_user16_rawdb_isa_mfg
+  fiix-user-code: xws_user16_SM
+metadata:
+  cognite-toolkit-hash: /=588e4b80;handler.py=b23704ec;requirements.txt=5e25b3e2;fiix/__init__.py=fb25065f;fiix/assets.py=abb39ee9;fiix/auth.py=267c9cf2;fiix/client.py=13671a53;fiix/config.py=cd1335d4;fiix/exceptions.py=151bef40;fiix/logger.py=20f51840;fiix/mapper.py=f5f852b5;fiix/models.py=bca1a85e;fiix/scheduled_maintenance.py=70a4af82;fiix/uploader.py=ab4e33b2;fiix/workorders.py=2d2b34b9

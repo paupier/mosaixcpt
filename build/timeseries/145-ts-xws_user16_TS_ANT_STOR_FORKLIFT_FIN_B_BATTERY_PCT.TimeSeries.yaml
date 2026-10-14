@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_BATTERY_PCT
+name: ANT Finished Goods Forklift B Battery Pct
+description: Forklift battery state of charge for storage operations.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: '%'
+isString: false
+isStep: false

@@ -1,0 +1,3 @@
+- dbName: {{ rawDatabaseName }}
+  tableName: isa_personnel
+

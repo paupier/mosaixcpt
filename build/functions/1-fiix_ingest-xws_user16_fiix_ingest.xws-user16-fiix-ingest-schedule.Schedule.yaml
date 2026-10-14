@@ -1,0 +1,7 @@
+functionExternalId: xws_user16_fiix_ingest
+name: xws-user16-fiix-ingest-schedule
+cronExpression: '*/5 * * * *'
+description: Runs the Fiix work order ingest every 5 minutes
+authentication:
+  clientId: ${SCHEDULE_CLIENT_ID}
+  clientSecret: ${SCHEDULE_CLIENT_SECRET}

@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_ANT_MIX_WEIGH_HOPPER_1_TEMP_DEGC
+name: ANT Weigh Hopper 1 Temp Degc
+description: Production-line support signal correlated with oven incidents and throughput
+  effects.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: degC
+isString: false
+isStep: false

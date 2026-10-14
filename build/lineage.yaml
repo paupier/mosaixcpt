@@ -1,0 +1,2998 @@
+timestamp: '2026-10-14T14:22:49+00:00'
+duration: 11.86
+organizationDir: C:/FTDM/ftdm-xws-model
+buildDir: build
+cdfProject: ptec-04
+modulesSummary:
+  processed: 1
+  succeeded: 1
+  failed: 0
+insightsSummary: {}
+moduleLineage:
+- moduleId: modules/custom/cookie_manufacturing
+  modulePath: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing
+  insightsSummary: {}
+  resourceLineage:
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\ISA_Manufacturing_EDM.DataModel.yaml
+    sourceHash: 4207c13a
+    type:
+      resource_folder: data_modeling
+      kind: DataModel
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\1-ISA_Manufacturing_EDM-xws_user16_spc_dm_isa_mfg.xws_user16_dm_isa_mfg.v1.DataModel.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: xws_user16_dm_isa_mfg
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\sp_isa_instance.Space.yaml
+    sourceHash: ce140e0f
+    type:
+      resource_folder: data_modeling
+      kind: Space
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\1-sp_isa_instance-xws_user16_spc_inst_isa_mfg.Space.yaml
+    identifier:
+      space: xws_user16_spc_inst_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\sp_isa_manufacturing.Space.yaml
+    sourceHash: 44258e83
+    type:
+      resource_folder: data_modeling
+      kind: Space
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\2-sp_isa_manufacturing-xws_user16_spc_dm_isa_mfg.Space.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Area.Container.yaml
+    sourceHash: 5b15bcfb
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\1-sp_isa_manufacturing_Area-xws_user16_spc_dm_isa_mfg.Area.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Area
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Batch.Container.yaml
+    sourceHash: 2fc743dc
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\2-sp_isa_manufacturing_Batch-xws_user16_spc_dm_isa_mfg.Batch.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Batch
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_ControlModule.Container.yaml
+    sourceHash: fe801c8c
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\3-sp_isa_manufacturing_ControlModule-xws_user16_spc_dm_isa_mfg.ControlModule.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ControlModule
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Enterprise.Container.yaml
+    sourceHash: 505da0fa
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\4-sp_isa_manufacturing_Enterprise-xws_user16_spc_dm_isa_mfg.Enterprise.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Enterprise
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Equipment.Container.yaml
+    sourceHash: 876447f1
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\5-sp_isa_manufacturing_Equipment-xws_user16_spc_dm_isa_mfg.Equipment.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Equipment
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_EquipmentModule.Container.yaml
+    sourceHash: 8ebe8d00
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\6-sp_isa_manufacturing_EquipmentModule-xws_user16_spc_dm_isa_mfg.EquipmentModule.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: EquipmentModule
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_ISAAsset.Container.yaml
+    sourceHash: 5a5444de
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\7-sp_isa_manufacturing_ISAAsset-xws_user16_spc_dm_isa_mfg.ISAAsset.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ISAAsset
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Material.Container.yaml
+    sourceHash: 65ea6f9d
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\8-sp_isa_manufacturing_Material-xws_user16_spc_dm_isa_mfg.Material.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Material
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_MaterialLot.Container.yaml
+    sourceHash: ea4a65a6
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\9-sp_isa_manufacturing_MaterialLot-xws_user16_spc_dm_isa_mfg.MaterialLot.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: MaterialLot
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Operation.Container.yaml
+    sourceHash: 0ca3997f
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\10-sp_isa_manufacturing_Operation-xws_user16_spc_dm_isa_mfg.Operation.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Operation
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Personnel.Container.yaml
+    sourceHash: 40e662ca
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\11-sp_isa_manufacturing_Personnel-xws_user16_spc_dm_isa_mfg.Personnel.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Personnel
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Phase.Container.yaml
+    sourceHash: 0f10dbc6
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\12-sp_isa_manufacturing_Phase-xws_user16_spc_dm_isa_mfg.Phase.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Phase
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Procedure.Container.yaml
+    sourceHash: 2b86e559
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\13-sp_isa_manufacturing_Procedure-xws_user16_spc_dm_isa_mfg.Procedure.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Procedure
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_ProcessCell.Container.yaml
+    sourceHash: 0904a732
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\14-sp_isa_manufacturing_ProcessCell-xws_user16_spc_dm_isa_mfg.ProcessCell.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ProcessCell
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_ProcessParameter.Container.yaml
+    sourceHash: cf37db9a
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\15-sp_isa_manufacturing_ProcessParameter-xws_user16_spc_dm_isa_mfg.ProcessParameter.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ProcessParameter
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_ProductDefinition.Container.yaml
+    sourceHash: c0a14673
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\16-sp_isa_manufacturing_ProductDefinition-xws_user16_spc_dm_isa_mfg.ProductDefinition.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ProductDefinition
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_ProductRequest.Container.yaml
+    sourceHash: d75bb2b6
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\17-sp_isa_manufacturing_ProductRequest-xws_user16_spc_dm_isa_mfg.ProductRequest.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ProductRequest
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_ProductSegment.Container.yaml
+    sourceHash: b4211895
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\18-sp_isa_manufacturing_ProductSegment-xws_user16_spc_dm_isa_mfg.ProductSegment.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ProductSegment
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_QualityResult.Container.yaml
+    sourceHash: 439abc76
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\19-sp_isa_manufacturing_QualityResult-xws_user16_spc_dm_isa_mfg.QualityResult.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: QualityResult
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Recipe.Container.yaml
+    sourceHash: 86d7dc20
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\20-sp_isa_manufacturing_Recipe-xws_user16_spc_dm_isa_mfg.Recipe.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Recipe
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Site.Container.yaml
+    sourceHash: fb758ca7
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\21-sp_isa_manufacturing_Site-xws_user16_spc_dm_isa_mfg.Site.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Site
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_Unit.Container.yaml
+    sourceHash: 3d55acb8
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\22-sp_isa_manufacturing_Unit-xws_user16_spc_dm_isa_mfg.Unit.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Unit
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_UnitProcedure.Container.yaml
+    sourceHash: 588bd329
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\23-sp_isa_manufacturing_UnitProcedure-xws_user16_spc_dm_isa_mfg.UnitProcedure.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: UnitProcedure
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\containers\sp_isa_manufacturing_WorkOrder.Container.yaml
+    sourceHash: 668d7b06
+    type:
+      resource_folder: data_modeling
+      kind: Container
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\24-sp_isa_manufacturing_WorkOrder-xws_user16_spc_dm_isa_mfg.WorkOrder.Container.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: WorkOrder
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Area.view.yaml
+    sourceHash: 7e0b7252
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\1-Area-xws_user16_spc_dm_isa_mfg.Area.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Area
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Batch.view.yaml
+    sourceHash: 7dce0de3
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\2-Batch-xws_user16_spc_dm_isa_mfg.Batch.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Batch
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\ControlModule.view.yaml
+    sourceHash: cf0e99a4
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\3-ControlModule-xws_user16_spc_dm_isa_mfg.ControlModule.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ControlModule
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Enterprise.view.yaml
+    sourceHash: d36eb721
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\4-Enterprise-xws_user16_spc_dm_isa_mfg.Enterprise.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Enterprise
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Equipment.view.yaml
+    sourceHash: 2521fe42
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\5-Equipment-xws_user16_spc_dm_isa_mfg.Equipment.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Equipment
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\EquipmentModule.view.yaml
+    sourceHash: 8f6981f7
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\6-EquipmentModule-xws_user16_spc_dm_isa_mfg.EquipmentModule.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: EquipmentModule
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\ISAAsset.view.yaml
+    sourceHash: d3345f6e
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\7-ISAAsset-xws_user16_spc_dm_isa_mfg.ISAAsset.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ISAAsset
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\ISAFile.view.yaml
+    sourceHash: dc1ff1b9
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\8-ISAFile-xws_user16_spc_dm_isa_mfg.ISAFile.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ISAFile
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\ISATimeSeries.view.yaml
+    sourceHash: 9ad5891f
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\9-ISATimeSeries-xws_user16_spc_dm_isa_mfg.ISATimeSeries.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ISATimeSeries
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Material.view.yaml
+    sourceHash: fc5e43ed
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\10-Material-xws_user16_spc_dm_isa_mfg.Material.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Material
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\MaterialLot.view.yaml
+    sourceHash: 38f7f644
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\11-MaterialLot-xws_user16_spc_dm_isa_mfg.MaterialLot.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: MaterialLot
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Operation.view.yaml
+    sourceHash: c3aca7a0
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\12-Operation-xws_user16_spc_dm_isa_mfg.Operation.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Operation
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Personnel.view.yaml
+    sourceHash: 5ee75c9e
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\13-Personnel-xws_user16_spc_dm_isa_mfg.Personnel.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Personnel
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Phase.view.yaml
+    sourceHash: 9496cc5e
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\14-Phase-xws_user16_spc_dm_isa_mfg.Phase.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Phase
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Procedure.view.yaml
+    sourceHash: 45499eab
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\15-Procedure-xws_user16_spc_dm_isa_mfg.Procedure.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Procedure
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\ProcessCell.view.yaml
+    sourceHash: 8b9fe9b9
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\16-ProcessCell-xws_user16_spc_dm_isa_mfg.ProcessCell.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ProcessCell
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\ProcessParameter.view.yaml
+    sourceHash: 73044bb5
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\17-ProcessParameter-xws_user16_spc_dm_isa_mfg.ProcessParameter.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ProcessParameter
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\ProductDefinition.view.yaml
+    sourceHash: b797edd2
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\18-ProductDefinition-xws_user16_spc_dm_isa_mfg.ProductDefinition.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ProductDefinition
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\ProductRequest.view.yaml
+    sourceHash: f4c52e38
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\19-ProductRequest-xws_user16_spc_dm_isa_mfg.ProductRequest.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ProductRequest
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\ProductSegment.view.yaml
+    sourceHash: fee8d463
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\20-ProductSegment-xws_user16_spc_dm_isa_mfg.ProductSegment.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: ProductSegment
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\QualityResult.view.yaml
+    sourceHash: d4f69d2b
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\21-QualityResult-xws_user16_spc_dm_isa_mfg.QualityResult.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: QualityResult
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Recipe.view.yaml
+    sourceHash: 3b4d1236
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\22-Recipe-xws_user16_spc_dm_isa_mfg.Recipe.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Recipe
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Site.view.yaml
+    sourceHash: 2dfff59c
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\23-Site-xws_user16_spc_dm_isa_mfg.Site.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Site
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\Unit.view.yaml
+    sourceHash: c14d5bda
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\24-Unit-xws_user16_spc_dm_isa_mfg.Unit.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: Unit
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\UnitProcedure.view.yaml
+    sourceHash: 19f6c991
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\25-UnitProcedure-xws_user16_spc_dm_isa_mfg.UnitProcedure.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: UnitProcedure
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\views\WorkOrder.view.yaml
+    sourceHash: 96662cf5
+    type:
+      resource_folder: data_modeling
+      kind: View
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_modeling\26-WorkOrder-xws_user16_spc_dm_isa_mfg.WorkOrder.v1.View.yaml
+    identifier:
+      space: xws_user16_spc_dm_isa_mfg
+      externalId: WorkOrder
+      version: v1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_sets\isa_manufacturing.DataSet.yaml
+    sourceHash: 84e8f063
+    type:
+      resource_folder: data_sets
+      kind: DataSet
+    builtFile: C:\FTDM\ftdm-xws-model\build\data_sets\1-isa_manufacturing-xws_user16_ds_isa_mfg.DataSet.yaml
+    identifier:
+      externalId: xws_user16_ds_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\extraction_pipelines\ep_opcua_isa_mfg.config.yaml
+    sourceHash: d9abe613
+    type:
+      resource_folder: extraction_pipelines
+      kind: Config
+    builtFile: C:\FTDM\ftdm-xws-model\build\extraction_pipelines\1-ep_opcua_isa_mfg-xws_user16_ep_opcua_isa_mfg.Config.yaml
+    identifier:
+      externalId: xws_user16_ep_opcua_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\extraction_pipelines\ep_opcua_isa_mfg.ExtractionPipeline.yaml
+    sourceHash: b00c4f3e
+    type:
+      resource_folder: extraction_pipelines
+      kind: ExtractionPipeline
+    builtFile: C:\FTDM\ftdm-xws-model\build\extraction_pipelines\1-ep_opcua_isa_mfg-xws_user16_ep_opcua_isa_mfg.ExtractionPipeline.yaml
+    identifier:
+      externalId: xws_user16_ep_opcua_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\1-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_PID_PC_CHI_BAKE.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_PID_PC_CHI_BAKE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\2-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_PID_PC_ANT_BAKE.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_PID_PC_ANT_BAKE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\3-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_PID_PC_CHI_PACK.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_PID_PC_CHI_PACK
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\4-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_PID_PC_ANT_PACK.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_PID_PC_ANT_PACK
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\5-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_AIR_SYSTEM_EM_CHI_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_AIR_SYSTEM_EM_CHI_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\6-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_CHI_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_CHI_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\7-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\8-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_CHI_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_CHI_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\9-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\10-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\11-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\12-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_AIR_SYSTEM_EM_CHI_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_AIR_SYSTEM_EM_CHI_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\13-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_CHI_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_CHI_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\14-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\15-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_CHI_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_CHI_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\16-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\17-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\18-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\19-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_AIR_SYSTEM_EM_ANT_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_AIR_SYSTEM_EM_ANT_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\20-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_ANT_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_ANT_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\21-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\22-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_ANT_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_ANT_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\23-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\24-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\25-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN1.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN1
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\26-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_AIR_SYSTEM_EM_ANT_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_AIR_SYSTEM_EM_ANT_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\27-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_ANT_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_ANT_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\28-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\29-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_ANT_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_ANT_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\30-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\31-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\32-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN2.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN2
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\33-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_FLOW_WRAPPER_UNIT_COMPRESSED_AIR_DISTRIBUTION_SYSTEM_UNIT_CHI_PACK.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_FLOW_WRAPPER_UNIT_COMPRESSED_AIR_DISTRIBUTION_SYSTEM_UNIT_CHI_PACK
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\34-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_FLOW_WRAPPER_UNIT_EQUIPMENT_LAYOUT_UNIT_CHI_PACK.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_FLOW_WRAPPER_UNIT_EQUIPMENT_LAYOUT_UNIT_CHI_PACK
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\35-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_FLOW_WRAPPER_UNIT_PRODUCT_CONVEYOR_CONTROL_SYSTEM_UNIT_CHI_PACK.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_FLOW_WRAPPER_UNIT_PRODUCT_CONVEYOR_CONTROL_SYSTEM_UNIT_CHI_PACK
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\36-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_FLOW_WRAPPER_UNIT_SEALING_TEMPERATURE_CONTROL_SYSTEM_UNIT_CHI_PACK.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_FLOW_WRAPPER_UNIT_SEALING_TEMPERATURE_CONTROL_SYSTEM_UNIT_CHI_PACK
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\37-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_FLOW_WRAPPER_UNIT_COMPRESSED_AIR_DISTRIBUTION_SYSTEM_UNIT_ANT_PACK.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_FLOW_WRAPPER_UNIT_COMPRESSED_AIR_DISTRIBUTION_SYSTEM_UNIT_ANT_PACK
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\38-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_FLOW_WRAPPER_UNIT_EQUIPMENT_LAYOUT_UNIT_ANT_PACK.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_FLOW_WRAPPER_UNIT_EQUIPMENT_LAYOUT_UNIT_ANT_PACK
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\39-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_FLOW_WRAPPER_UNIT_PRODUCT_CONVEYOR_CONTROL_SYSTEM_UNIT_ANT_PACK.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_FLOW_WRAPPER_UNIT_PRODUCT_CONVEYOR_CONTROL_SYSTEM_UNIT_ANT_PACK
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\40-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_FLOW_WRAPPER_UNIT_SEALING_TEMPERATURE_CONTROL_SYSTEM_UNIT_ANT_PACK.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_FLOW_WRAPPER_UNIT_SEALING_TEMPERATURE_CONTROL_SYSTEM_UNIT_ANT_PACK
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\41-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_001.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_001
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\42-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_002.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_002
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\43-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_003.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_003
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\44-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_004.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_004
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\45-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_005.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_005
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\46-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_006.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_006
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\47-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_007.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_007
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\48-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_008.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_008
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\49-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_009.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_009
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\50-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_010.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_010
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\51-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_011.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_011
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\52-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_012.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_012
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\53-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_013.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_013
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\54-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_014.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_014
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\55-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_015.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_015
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\56-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_016.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_016
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\files\files.CogniteFile.yaml
+    sourceHash: e444e07d
+    type:
+      resource_folder: files
+      kind: CogniteFile
+    builtFile: C:\FTDM\ftdm-xws-model\build\files\57-files-xws_user16_spc_inst_isa_mfg.xws_user16_FILE_COOKIE_017.CogniteFile.yaml
+    identifier:
+      instanceType: node
+      space: xws_user16_spc_inst_isa_mfg
+      externalId: xws_user16_FILE_COOKIE_017
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\functions\fiix_ingest.Function.yaml
+    sourceHash: d08d4a58
+    type:
+      resource_folder: functions
+      kind: Function
+    builtFile: C:\FTDM\ftdm-xws-model\build\functions\1-fiix_ingest-xws_user16_fiix_ingest.Function.yaml
+    identifier:
+      externalId: xws_user16_fiix_ingest
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\functions\fiix_ingest.Schedule.yaml
+    sourceHash: e40ce5d1
+    type:
+      resource_folder: functions
+      kind: Schedule
+    builtFile: C:\FTDM\ftdm-xws-model\build\functions\1-fiix_ingest-xws_user16_fiix_ingest.xws-user16-fiix-ingest-schedule.Schedule.yaml
+    identifier:
+      functionExternalId: xws_user16_fiix_ingest
+      name: xws-user16-fiix-ingest-schedule
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\locations\isaManufacturingEDM.LocationFilter.yaml
+    sourceHash: dfd6d7a2
+    type:
+      resource_folder: locations
+      kind: LocationFilter
+    builtFile: C:\FTDM\ftdm-xws-model\build\locations\1-isaManufacturingEDM-xws_user16_lf_isa_mfg.LocationFilter.yaml
+    identifier:
+      externalId: xws_user16_lf_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_asset.Table.yaml
+    sourceHash: c3551daa
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\1-isa_asset-xws_user16_rawdb_isa_mfg.isa_asset.Table.yaml
+    identifier:
+      name: isa_asset
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_batch.Table.yaml
+    sourceHash: 11b0eba9
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\2-isa_batch-xws_user16_rawdb_isa_mfg.isa_batch.Table.yaml
+    identifier:
+      name: isa_batch
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_control_module.Table.yaml
+    sourceHash: 28f7f1c1
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\3-isa_control_module-xws_user16_rawdb_isa_mfg.isa_control_module.Table.yaml
+    identifier:
+      name: isa_control_module
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_equipment.Table.yaml
+    sourceHash: d27763cf
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\4-isa_equipment-xws_user16_rawdb_isa_mfg.isa_equipment.Table.yaml
+    identifier:
+      name: isa_equipment
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_file.Table.yaml
+    sourceHash: 56f68385
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\5-isa_file-xws_user16_rawdb_isa_mfg.isa_file.Table.yaml
+    identifier:
+      name: isa_file
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_lot.Table.yaml
+    sourceHash: 538f2b03
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\6-isa_lot-xws_user16_rawdb_isa_mfg.isa_lot.Table.yaml
+    identifier:
+      name: isa_lot
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\ISA_Manufacturing.Database.yaml
+    sourceHash: f3af7ab7
+    type:
+      resource_folder: raw
+      kind: Database
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\1-ISA_Manufacturing-xws_user16_rawdb_isa_mfg.Database.yaml
+    identifier:
+      name: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_material.Table.yaml
+    sourceHash: 339779da
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\7-isa_material-xws_user16_rawdb_isa_mfg.isa_material.Table.yaml
+    identifier:
+      name: isa_material
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_operation.Table.yaml
+    sourceHash: ae0bb7fd
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\8-isa_operation-xws_user16_rawdb_isa_mfg.isa_operation.Table.yaml
+    identifier:
+      name: isa_operation
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_personnel.Table.yaml
+    sourceHash: 5cb3babc
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\9-isa_personnel-xws_user16_rawdb_isa_mfg.isa_personnel.Table.yaml
+    identifier:
+      name: isa_personnel
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_phase.Table.yaml
+    sourceHash: 273b7ac5
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\10-isa_phase-xws_user16_rawdb_isa_mfg.isa_phase.Table.yaml
+    identifier:
+      name: isa_phase
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_procedure.Table.yaml
+    sourceHash: fe633072
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\11-isa_procedure-xws_user16_rawdb_isa_mfg.isa_procedure.Table.yaml
+    identifier:
+      name: isa_procedure
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_process_parameter.Table.yaml
+    sourceHash: '66778454'
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\12-isa_process_parameter-xws_user16_rawdb_isa_mfg.isa_process_parameter.Table.yaml
+    identifier:
+      name: isa_process_parameter
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_product_definition.Table.yaml
+    sourceHash: 176712c4
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\13-isa_product_definition-xws_user16_rawdb_isa_mfg.isa_product_definition.Table.yaml
+    identifier:
+      name: isa_product_definition
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_product_request.Table.yaml
+    sourceHash: db155af7
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\14-isa_product_request-xws_user16_rawdb_isa_mfg.isa_product_request.Table.yaml
+    identifier:
+      name: isa_product_request
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_product_segment.Table.yaml
+    sourceHash: 9f37f200
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\15-isa_product_segment-xws_user16_rawdb_isa_mfg.isa_product_segment.Table.yaml
+    identifier:
+      name: isa_product_segment
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_quality_result.Table.yaml
+    sourceHash: 37e0c73a
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\16-isa_quality_result-xws_user16_rawdb_isa_mfg.isa_quality_result.Table.yaml
+    identifier:
+      name: isa_quality_result
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_recipe.Table.yaml
+    sourceHash: b6698474
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\17-isa_recipe-xws_user16_rawdb_isa_mfg.isa_recipe.Table.yaml
+    identifier:
+      name: isa_recipe
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_timeseries.Table.yaml
+    sourceHash: a04c6bbb
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\18-isa_timeseries-xws_user16_rawdb_isa_mfg.isa_timeseries.Table.yaml
+    identifier:
+      name: isa_timeseries
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_unit_procedure.Table.yaml
+    sourceHash: ba46d84a
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\19-isa_unit_procedure-xws_user16_rawdb_isa_mfg.isa_unit_procedure.Table.yaml
+    identifier:
+      name: isa_unit_procedure
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\raw\isa_work_order.Table.yaml
+    sourceHash: de2b758e
+    type:
+      resource_folder: raw
+      kind: Table
+    builtFile: C:\FTDM\ftdm-xws-model\build\raw\20-isa_work_order-xws_user16_rawdb_isa_mfg.isa_work_order.Table.yaml
+    identifier:
+      name: isa_work_order
+      dbName: xws_user16_rawdb_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\1-ts-xws_user16_TS_CHI_BAKE_OVEN1_TEMP_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_TEMP_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\2-ts-xws_user16_TS_CHI_BAKE_OVEN2_PRESSURE_BAR.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_PRESSURE_BAR
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\3-ts-xws_user16_TS_CHI_BAKE_OVEN1_AIRFLOW_M3H.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_AIRFLOW_M3H
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\4-ts-xws_user16_TS_CHI_BAKE_OVEN2_BURNER_LOAD_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_BURNER_LOAD_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\5-ts-xws_user16_TS_CHI_BAKE_OVEN1_ZONE_DELTA_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_ZONE_DELTA_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\6-ts-xws_user16_TS_CHI_BAKE_OVEN2_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\7-ts-xws_user16_TS_CHI_BAKE_OVEN1_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\8-ts-xws_user16_TS_CHI_BAKE_OVEN2_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\9-ts-xws_user16_TS_CHI_BAKE_OVEN1_THROUGHPUT_KG_H.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_THROUGHPUT_KG_H
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\10-ts-xws_user16_TS_CHI_BAKE_OVEN2_TEMP_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_TEMP_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\11-ts-xws_user16_TS_CHI_BAKE_OVEN1_PRESSURE_BAR.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_PRESSURE_BAR
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\12-ts-xws_user16_TS_CHI_BAKE_OVEN2_AIRFLOW_M3H.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_AIRFLOW_M3H
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\13-ts-xws_user16_TS_CHI_BAKE_OVEN1_BURNER_LOAD_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_BURNER_LOAD_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\14-ts-xws_user16_TS_CHI_BAKE_OVEN2_ZONE_DELTA_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_ZONE_DELTA_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\15-ts-xws_user16_TS_CHI_BAKE_OVEN1_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\16-ts-xws_user16_TS_CHI_BAKE_OVEN2_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\17-ts-xws_user16_TS_CHI_BAKE_OVEN1_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\18-ts-xws_user16_TS_CHI_BAKE_OVEN2_THROUGHPUT_KG_H.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_THROUGHPUT_KG_H
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\19-ts-xws_user16_TS_CHI_BAKE_OVEN2_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\20-ts-xws_user16_TS_CHI_BAKE_OVEN2_ALARM_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_ALARM_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\21-ts-xws_user16_TS_CHI_BAKE_OVEN1_HUMIDITY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_HUMIDITY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\22-ts-xws_user16_TS_CHI_BAKE_OVEN2_HUMIDITY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_HUMIDITY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\23-ts-xws_user16_TS_CHI_BAKE_OVEN1_EXHAUST_TEMP_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_EXHAUST_TEMP_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\24-ts-xws_user16_TS_CHI_BAKE_OVEN2_EXHAUST_TEMP_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN2_EXHAUST_TEMP_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\25-ts-xws_user16_TS_CHI_BAKE_OVEN1_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\26-ts-xws_user16_TS_CHI_BAKE_OVEN1_ALARM_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_BAKE_OVEN1_ALARM_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\27-ts-xws_user16_TS_CHI_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\28-ts-xws_user16_TS_CHI_MIX_WEIGH_HOPPER_1_TEMP_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_MIX_WEIGH_HOPPER_1_TEMP_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\29-ts-xws_user16_TS_CHI_PACK_FLOW_WRAPPER_PRESSURE_BAR.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_PACK_FLOW_WRAPPER_PRESSURE_BAR
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\30-ts-xws_user16_TS_CHI_COOL_COOLING_TABLE_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_COOL_COOLING_TABLE_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\31-ts-xws_user16_TS_CHI_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\32-ts-xws_user16_TS_CHI_FORM_ROTARY_MOLDER_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_FORM_ROTARY_MOLDER_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\33-ts-xws_user16_TS_CHI_FORM_WIRECUT_MACHINE_LOAD_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_FORM_WIRECUT_MACHINE_LOAD_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\34-ts-xws_user16_TS_CHI_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\35-ts-xws_user16_TS_CHI_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\36-ts-xws_user16_TS_ANT_BAKE_OVEN1_TEMP_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_TEMP_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\37-ts-xws_user16_TS_ANT_BAKE_OVEN2_PRESSURE_BAR.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_PRESSURE_BAR
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\38-ts-xws_user16_TS_ANT_BAKE_OVEN1_AIRFLOW_M3H.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_AIRFLOW_M3H
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\39-ts-xws_user16_TS_ANT_BAKE_OVEN2_BURNER_LOAD_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_BURNER_LOAD_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\40-ts-xws_user16_TS_ANT_BAKE_OVEN1_ZONE_DELTA_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_ZONE_DELTA_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\41-ts-xws_user16_TS_ANT_BAKE_OVEN2_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\42-ts-xws_user16_TS_ANT_BAKE_OVEN1_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\43-ts-xws_user16_TS_ANT_BAKE_OVEN2_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\44-ts-xws_user16_TS_ANT_BAKE_OVEN1_THROUGHPUT_KG_H.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_THROUGHPUT_KG_H
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\45-ts-xws_user16_TS_ANT_BAKE_OVEN2_TEMP_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_TEMP_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\46-ts-xws_user16_TS_ANT_BAKE_OVEN1_PRESSURE_BAR.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_PRESSURE_BAR
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\47-ts-xws_user16_TS_ANT_BAKE_OVEN2_AIRFLOW_M3H.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_AIRFLOW_M3H
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\48-ts-xws_user16_TS_ANT_BAKE_OVEN1_BURNER_LOAD_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_BURNER_LOAD_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\49-ts-xws_user16_TS_ANT_BAKE_OVEN2_ZONE_DELTA_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_ZONE_DELTA_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\50-ts-xws_user16_TS_ANT_BAKE_OVEN1_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\51-ts-xws_user16_TS_ANT_BAKE_OVEN2_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\52-ts-xws_user16_TS_ANT_BAKE_OVEN1_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\53-ts-xws_user16_TS_ANT_BAKE_OVEN2_THROUGHPUT_KG_H.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_THROUGHPUT_KG_H
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\54-ts-xws_user16_TS_ANT_BAKE_OVEN2_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\55-ts-xws_user16_TS_ANT_BAKE_OVEN2_ALARM_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_ALARM_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\56-ts-xws_user16_TS_ANT_BAKE_OVEN1_HUMIDITY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_HUMIDITY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\57-ts-xws_user16_TS_ANT_BAKE_OVEN2_HUMIDITY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_HUMIDITY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\58-ts-xws_user16_TS_ANT_BAKE_OVEN1_EXHAUST_TEMP_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_EXHAUST_TEMP_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\59-ts-xws_user16_TS_ANT_BAKE_OVEN2_EXHAUST_TEMP_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN2_EXHAUST_TEMP_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\60-ts-xws_user16_TS_ANT_BAKE_OVEN1_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\61-ts-xws_user16_TS_ANT_BAKE_OVEN1_ALARM_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_BAKE_OVEN1_ALARM_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\62-ts-xws_user16_TS_ANT_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\63-ts-xws_user16_TS_ANT_MIX_WEIGH_HOPPER_1_TEMP_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_MIX_WEIGH_HOPPER_1_TEMP_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\64-ts-xws_user16_TS_ANT_PACK_FLOW_WRAPPER_PRESSURE_BAR.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_PACK_FLOW_WRAPPER_PRESSURE_BAR
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\65-ts-xws_user16_TS_ANT_COOL_COOLING_TABLE_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_COOL_COOLING_TABLE_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\66-ts-xws_user16_TS_ANT_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\67-ts-xws_user16_TS_ANT_FORM_ROTARY_MOLDER_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_FORM_ROTARY_MOLDER_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\68-ts-xws_user16_TS_ANT_FORM_WIRECUT_MACHINE_LOAD_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_FORM_WIRECUT_MACHINE_LOAD_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\69-ts-xws_user16_TS_ANT_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\70-ts-xws_user16_TS_ANT_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\71-ts-xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\72-ts-xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\73-ts-xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\74-ts-xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_RAW_A_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\75-ts-xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\76-ts-xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\77-ts-xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\78-ts-xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_RAW_B_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\79-ts-xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\80-ts-xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\81-ts-xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\82-ts-xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_A_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\83-ts-xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\84-ts-xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\85-ts-xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\86-ts-xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\87-ts-xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\88-ts-xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\89-ts-xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\90-ts-xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_FIN_A_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\91-ts-xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\92-ts-xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\93-ts-xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\94-ts-xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\95-ts-xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\96-ts-xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\97-ts-xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\98-ts-xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_RAW_1_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\99-ts-xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\100-ts-xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\101-ts-xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\102-ts-xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_RAW_2_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\103-ts-xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\104-ts-xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\105-ts-xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\106-ts-xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_1_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\107-ts-xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\108-ts-xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\109-ts-xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\110-ts-xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\111-ts-xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\112-ts-xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\113-ts-xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\114-ts-xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_FIN_1_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\115-ts-xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\116-ts-xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\117-ts-xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\118-ts-xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_CONVEYOR_FIN_2_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\119-ts-xws_user16_TS_CHI_STOR_SILO_1_FILL_LEVEL_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_SILO_1_FILL_LEVEL_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\120-ts-xws_user16_TS_CHI_STOR_SILO_1_TEMPERATURE_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_SILO_1_TEMPERATURE_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\121-ts-xws_user16_TS_CHI_STOR_SILO_2_FILL_LEVEL_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_SILO_2_FILL_LEVEL_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\122-ts-xws_user16_TS_CHI_STOR_SILO_2_TEMPERATURE_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_SILO_2_TEMPERATURE_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\123-ts-xws_user16_TS_CHI_STOR_LIQUID_SKID_FLOW_RATE_LH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_LIQUID_SKID_FLOW_RATE_LH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\124-ts-xws_user16_TS_CHI_STOR_LIQUID_SKID_PRESSURE_BAR.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_CHI_STOR_LIQUID_SKID_PRESSURE_BAR
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\125-ts-xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\126-ts-xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\127-ts-xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\128-ts-xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_RAW_A_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\129-ts-xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\130-ts-xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\131-ts-xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\132-ts-xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_RAW_B_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\133-ts-xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\134-ts-xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\135-ts-xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\136-ts-xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_A_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\137-ts-xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\138-ts-xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\139-ts-xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\140-ts-xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_SEMI_B_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\141-ts-xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\142-ts-xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\143-ts-xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\144-ts-xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_FIN_A_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\145-ts-xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_BATTERY_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_BATTERY_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\146-ts-xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_LOAD_KG.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_LOAD_KG
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\147-ts-xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\148-ts-xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_FORKLIFT_FIN_B_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\149-ts-xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\150-ts-xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\151-ts-xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\152-ts-xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\153-ts-xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\154-ts-xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\155-ts-xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\156-ts-xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_RAW_2_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\157-ts-xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\158-ts-xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\159-ts-xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\160-ts-xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_1_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\161-ts-xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\162-ts-xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\163-ts-xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\164-ts-xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_SEMI_2_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\165-ts-xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\166-ts-xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\167-ts-xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\168-ts-xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\169-ts-xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\170-ts-xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\171-ts-xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\172-ts-xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_OPERATING_STATE.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_CONVEYOR_FIN_2_OPERATING_STATE
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\173-ts-xws_user16_TS_ANT_STOR_SILO_1_FILL_LEVEL_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_SILO_1_FILL_LEVEL_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\174-ts-xws_user16_TS_ANT_STOR_SILO_1_TEMPERATURE_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_SILO_1_TEMPERATURE_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\175-ts-xws_user16_TS_ANT_STOR_SILO_2_FILL_LEVEL_PCT.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_SILO_2_FILL_LEVEL_PCT
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\176-ts-xws_user16_TS_ANT_STOR_SILO_2_TEMPERATURE_DEGC.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_SILO_2_TEMPERATURE_DEGC
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\177-ts-xws_user16_TS_ANT_STOR_LIQUID_SKID_FLOW_RATE_LH.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_LIQUID_SKID_FLOW_RATE_LH
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\timeseries\ts.TimeSeries.yaml
+    sourceHash: 1dfa632f
+    type:
+      resource_folder: timeseries
+      kind: TimeSeries
+    builtFile: C:\FTDM\ftdm-xws-model\build\timeseries\178-ts-xws_user16_TS_ANT_STOR_LIQUID_SKID_PRESSURE_BAR.TimeSeries.yaml
+    identifier:
+      externalId: xws_user16_TS_ANT_STOR_LIQUID_SKID_PRESSURE_BAR
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\area_tr.Transformation.yaml
+    sourceHash: 2ac17b98
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\1-area_tr-xws_user16_area_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_area_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\batch_tr.Transformation.yaml
+    sourceHash: 9e591801
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\2-batch_tr-xws_user16_batch_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_batch_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\control_module_asset_tr.Transformation.yaml
+    sourceHash: 26db45d2
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\3-control_module_asset_tr-xws_user16_control_module_asset_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_control_module_asset_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\control_module_tr.Transformation.yaml
+    sourceHash: 68b36471
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\4-control_module_tr-xws_user16_control_module_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_control_module_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\enterprise_tr.Transformation.yaml
+    sourceHash: 8f581e09
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\5-enterprise_tr-xws_user16_enterprise_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_enterprise_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\equipment_module_link_equipment_tr.Transformation.yaml
+    sourceHash: 74cbd216
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\6-equipment_module_link_equipment_tr-xws_user16_equipment_module_link_equipment_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_equipment_module_link_equipment_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\equipment_module_tr.Transformation.yaml
+    sourceHash: aa3589d6
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\7-equipment_module_tr-xws_user16_equipment_module_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_equipment_module_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\equipment_tr.Transformation.yaml
+    sourceHash: 515fa78c
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\8-equipment_tr-xws_user16_equipment_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_equipment_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\files_tr.Transformation.yaml
+    sourceHash: bc83d19f
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\9-files_tr-xws_user16_files_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_files_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\isa_asset_tr.Transformation.yaml
+    sourceHash: 5eec005f
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\10-isa_asset_tr-xws_user16_isa_asset_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_isa_asset_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\material_lot_tr.Transformation.yaml
+    sourceHash: 534d9e38
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\11-material_lot_tr-xws_user16_material_lot_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_material_lot_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\material_tr.Transformation.yaml
+    sourceHash: 6ab4e540
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\12-material_tr-xws_user16_material_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_material_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\operation_tr.Transformation.yaml
+    sourceHash: 19c274ca
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\13-operation_tr-xws_user16_operation_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_operation_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\personnel_tr.Transformation.yaml
+    sourceHash: 917139b2
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\14-personnel_tr-xws_user16_personnel_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_personnel_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\phase_tr.Transformation.yaml
+    sourceHash: 86b5af4a
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\15-phase_tr-xws_user16_phase_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_phase_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\procedure_tr.Transformation.yaml
+    sourceHash: fd5bc0de
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\16-procedure_tr-xws_user16_procedure_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_procedure_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\process_cell_tr.Transformation.yaml
+    sourceHash: 86d39728
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\17-process_cell_tr-xws_user16_process_cell_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_process_cell_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\process_parameter_tr.Transformation.yaml
+    sourceHash: fa602125
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\18-process_parameter_tr-xws_user16_process_parameter_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_process_parameter_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\product_definition_tr.Transformation.yaml
+    sourceHash: a43c3794
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\19-product_definition_tr-xws_user16_product_definition_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_product_definition_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\product_request_tr.Transformation.yaml
+    sourceHash: 64b1783f
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\20-product_request_tr-xws_user16_product_request_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_product_request_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\product_segment_tr.Transformation.yaml
+    sourceHash: e59f0ddb
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\21-product_segment_tr-xws_user16_product_segment_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_product_segment_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\quality_result_tr.Transformation.yaml
+    sourceHash: d0ad1718
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\22-quality_result_tr-xws_user16_quality_result_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_quality_result_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\recipe_tr.Transformation.yaml
+    sourceHash: 2e84ba0b
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\23-recipe_tr-xws_user16_recipe_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_recipe_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\site_tr.Transformation.yaml
+    sourceHash: 4baaf322
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\24-site_tr-xws_user16_site_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_site_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\timeseries_tr.Transformation.yaml
+    sourceHash: 574c485c
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\25-timeseries_tr-xws_user16_timeseries_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_timeseries_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\unit_procedure_tr.Transformation.yaml
+    sourceHash: 27942d5e
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\26-unit_procedure_tr-xws_user16_unit_procedure_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_unit_procedure_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\unit_tr.Transformation.yaml
+    sourceHash: f13eb3c2
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\27-unit_tr-xws_user16_unit_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_unit_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\work_order_timeseries_tr.Transformation.yaml
+    sourceHash: c14f967a
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\28-work_order_timeseries_tr-xws_user16_work_order_timeseries_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_work_order_timeseries_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\transformations\work_order_tr.Transformation.yaml
+    sourceHash: 18acf927
+    type:
+      resource_folder: transformations
+      kind: Transformation
+    builtFile: C:\FTDM\ftdm-xws-model\build\transformations\29-work_order_tr-xws_user16_work_order_tr.Transformation.yaml
+    identifier:
+      externalId: xws_user16_work_order_tr
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\workflows\wf_isa_manufacturing.Workflow.yaml
+    sourceHash: 8edecd3a
+    type:
+      resource_folder: workflows
+      kind: Workflow
+    builtFile: C:\FTDM\ftdm-xws-model\build\workflows\1-wf_isa_manufacturing-xws_user16_wf_complete_isa_mfg.Workflow.yaml
+    identifier:
+      externalId: xws_user16_wf_complete_isa_mfg
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\workflows\wf_isa_manufacturing.WorkflowVersion.yaml
+    sourceHash: c465e92b
+    type:
+      resource_folder: workflows
+      kind: WorkflowVersion
+    builtFile: C:\FTDM\ftdm-xws-model\build\workflows\1-wf_isa_manufacturing-xws_user16_wf_complete_isa_mfg.1.WorkflowVersion.yaml
+    identifier:
+      workflowExternalId: xws_user16_wf_complete_isa_mfg
+      version: '1'
+  status: SUCCESS

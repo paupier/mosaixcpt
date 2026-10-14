@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_ANT_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM
+name: ANT Finished Goods Conveyor 1 Belt Speed Mpm
+description: Conveyor belt speed for storage operations.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: m/min
+isString: false
+isStep: false

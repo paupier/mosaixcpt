@@ -1,0 +1,13 @@
+externalId: "{{ functionExternalId }}"
+name: "{{ userPrefix }}fiix_ingest"
+runtime: py313
+owner: "{{ userPrefix }} from Milton Keynes"
+dataSetExternalId: "{{ datasetExternalId }}"
+description: "Imports Fiix work orders into CDF RAW isa_work_order table"
+secrets:
+  fiix-subdomain: "{{ FIIX_SUBDOMAIN }}"
+  fiix-app-key: "{{ FIIX_APP_KEY }}"
+  fiix-access-key: "{{ FIIX_ACCESS_KEY }}"
+  fiix-secret-key: "{{ FIIX_SECRET_KEY }}"
+  cdf-raw-db: "{{ rawDatabaseName }}"
+  fiix-user-code: "{{ userPrefix }}SM"

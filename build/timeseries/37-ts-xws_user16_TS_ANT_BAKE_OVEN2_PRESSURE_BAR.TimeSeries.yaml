@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_ANT_BAKE_OVEN2_PRESSURE_BAR
+name: ANT Oven 2 Pressure Bar
+description: Oven-centered production signal for anomaly, downtime, and quality impact
+  correlation.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: bar
+isString: false
+isStep: false

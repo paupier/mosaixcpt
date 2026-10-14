@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_CHI_STOR_FORKLIFT_FIN_B_LOAD_KG
+name: CHI Finished Goods Forklift B Load Kg
+description: Current load weight on forks for storage operations.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: kg
+isString: false
+isStep: false

@@ -1,0 +1,358 @@
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_PID_PC_CHI_BAKE'
+  name: 'PID_PC_CHI_BAKE.pdf'
+  description: P&ID — CHI Baking Oven Process Cell (PC_CHI_BAKE, NA / Chicago site)
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_PID_PC_ANT_BAKE'
+  name: 'PID_PC_ANT_BAKE.pdf'
+  description: P&ID — ANT Baking Oven Process Cell (PC_ANT_BAKE, EU / Antwerp site)
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_PID_PC_CHI_PACK'
+  name: 'PID_PC_CHI_PACK.pdf'
+  description: P&ID — CHI Packaging Process Cell (PC_CHI_PACK, NA / Chicago site)
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_PID_PC_ANT_PACK'
+  name: 'PID_PC_ANT_PACK.pdf'
+  description: P&ID — ANT Packaging Process Cell (PC_ANT_PACK, EU / Antwerp site)
+  mimeType: 'application/pdf'
+
+# ── Oven Unit Engineering Diagrams — CHI site Oven 1 (7 diagrams × EM_CHI_BAKE_OVEN1) ──
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_AIR_SYSTEM_EM_CHI_BAKE_OVEN1'
+  name: 'Oven Unit - Air System - EM_CHI_BAKE_OVEN1.png'
+  description: Oven Unit air system diagram — EM_CHI_BAKE_OVEN1 (CHI site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_CHI_BAKE_OVEN1'
+  name: 'Oven Unit - Equipment Layout - EM_CHI_BAKE_OVEN1.png'
+  description: Oven Unit equipment layout diagram — EM_CHI_BAKE_OVEN1 (CHI site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN1'
+  name: 'Oven Unit - Exhaust Control System - EM_CHI_BAKE_OVEN1.png'
+  description: Oven Unit exhaust control system diagram — EM_CHI_BAKE_OVEN1 (CHI site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_CHI_BAKE_OVEN1'
+  name: 'Oven Unit - Gas Train System - EM_CHI_BAKE_OVEN1.png'
+  description: Oven Unit gas train system diagram — EM_CHI_BAKE_OVEN1 (CHI site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN1'
+  name: 'Oven Unit - Integrated Safety System - EM_CHI_BAKE_OVEN1.png'
+  description: Oven Unit integrated safety system diagram — EM_CHI_BAKE_OVEN1 (CHI site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN1'
+  name: 'Oven Unit - Safety System - EM_CHI_BAKE_OVEN1.png'
+  description: Oven Unit safety system diagram — EM_CHI_BAKE_OVEN1 (CHI site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN1'
+  name: 'Oven Unit - Temperature Control System - EM_CHI_BAKE_OVEN1.png'
+  description: Oven Unit temperature control system diagram — EM_CHI_BAKE_OVEN1 (CHI site)
+  mimeType: 'image/png'
+
+
+# ── Oven Unit Engineering Diagrams — CHI site Oven 2 (7 diagrams × EM_CHI_BAKE_OVEN2) ──
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_AIR_SYSTEM_EM_CHI_BAKE_OVEN2'
+  name: 'Oven Unit - Air System - EM_CHI_BAKE_OVEN2.png'
+  description: Oven Unit air system diagram — EM_CHI_BAKE_OVEN2 (CHI site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_CHI_BAKE_OVEN2'
+  name: 'Oven Unit - Equipment Layout - EM_CHI_BAKE_OVEN2.png'
+  description: Oven Unit equipment layout diagram — EM_CHI_BAKE_OVEN2 (CHI site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN2'
+  name: 'Oven Unit - Exhaust Control System - EM_CHI_BAKE_OVEN2.png'
+  description: Oven Unit exhaust control system diagram — EM_CHI_BAKE_OVEN2 (CHI site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_CHI_BAKE_OVEN2'
+  name: 'Oven Unit - Gas Train System - EM_CHI_BAKE_OVEN2.png'
+  description: Oven Unit gas train system diagram — EM_CHI_BAKE_OVEN2 (CHI site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN2'
+  name: 'Oven Unit - Integrated Safety System - EM_CHI_BAKE_OVEN2.png'
+  description: Oven Unit integrated safety system diagram — EM_CHI_BAKE_OVEN2 (CHI site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_CHI_BAKE_OVEN2'
+  name: 'Oven Unit - Safety System - EM_CHI_BAKE_OVEN2.png'
+  description: Oven Unit safety system diagram — EM_CHI_BAKE_OVEN2 (CHI site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_CHI_BAKE_OVEN2'
+  name: 'Oven Unit - Temperature Control System - EM_CHI_BAKE_OVEN2.png'
+  description: Oven Unit temperature control system diagram — EM_CHI_BAKE_OVEN2 (CHI site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+# ── Oven Unit Engineering Diagrams — ANT site Oven 1 (7 diagrams × EM_ANT_BAKE_OVEN1) ──
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_AIR_SYSTEM_EM_ANT_BAKE_OVEN1'
+  name: 'Oven Unit - Air System - EM_ANT_BAKE_OVEN1.png'
+  description: Oven Unit air system diagram — EM_ANT_BAKE_OVEN1 (ANT site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_ANT_BAKE_OVEN1'
+  name: 'Oven Unit - Equipment Layout - EM_ANT_BAKE_OVEN1.png'
+  description: Oven Unit equipment layout diagram — EM_ANT_BAKE_OVEN1 (ANT site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN1'
+  name: 'Oven Unit - Exhaust Control System - EM_ANT_BAKE_OVEN1.png'
+  description: Oven Unit exhaust control system diagram — EM_ANT_BAKE_OVEN1 (ANT site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_ANT_BAKE_OVEN1'
+  name: 'Oven Unit - Gas Train System - EM_ANT_BAKE_OVEN1.png'
+  description: Oven Unit gas train system diagram — EM_ANT_BAKE_OVEN1 (ANT site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN1'
+  name: 'Oven Unit - Integrated Safety System - EM_ANT_BAKE_OVEN1.png'
+  description: Oven Unit integrated safety system diagram — EM_ANT_BAKE_OVEN1 (ANT site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN1'
+  name: 'Oven Unit - Safety System - EM_ANT_BAKE_OVEN1.png'
+  description: Oven Unit safety system diagram — EM_ANT_BAKE_OVEN1 (ANT site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN1'
+  name: 'Oven Unit - Temperature Control System - EM_ANT_BAKE_OVEN1.png'
+  description: Oven Unit temperature control system diagram — EM_ANT_BAKE_OVEN1 (ANT site)
+  mimeType: 'image/png'
+
+
+# ── Oven Unit Engineering Diagrams — ANT site Oven 2 (7 diagrams × EM_ANT_BAKE_OVEN2) ──
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_AIR_SYSTEM_EM_ANT_BAKE_OVEN2'
+  name: 'Oven Unit - Air System - EM_ANT_BAKE_OVEN2.png'
+  description: Oven Unit air system diagram — EM_ANT_BAKE_OVEN2 (ANT site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_EQUIPMENT_LAYOUT_EM_ANT_BAKE_OVEN2'
+  name: 'Oven Unit - Equipment Layout - EM_ANT_BAKE_OVEN2.png'
+  description: Oven Unit equipment layout diagram — EM_ANT_BAKE_OVEN2 (ANT site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_EXHAUST_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN2'
+  name: 'Oven Unit - Exhaust Control System - EM_ANT_BAKE_OVEN2.png'
+  description: Oven Unit exhaust control system diagram — EM_ANT_BAKE_OVEN2 (ANT site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_GAS_TRAIN_SYSTEM_EM_ANT_BAKE_OVEN2'
+  name: 'Oven Unit - Gas Train System - EM_ANT_BAKE_OVEN2.png'
+  description: Oven Unit gas train system diagram — EM_ANT_BAKE_OVEN2 (ANT site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_INTEGRATED_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN2'
+  name: 'Oven Unit - Integrated Safety System - EM_ANT_BAKE_OVEN2.png'
+  description: Oven Unit integrated safety system diagram — EM_ANT_BAKE_OVEN2 (ANT site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_SAFETY_SYSTEM_EM_ANT_BAKE_OVEN2'
+  name: 'Oven Unit - Safety System - EM_ANT_BAKE_OVEN2.png'
+  description: Oven Unit safety system diagram — EM_ANT_BAKE_OVEN2 (ANT site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_OVEN_UNIT_TEMPERATURE_CONTROL_SYSTEM_EM_ANT_BAKE_OVEN2'
+  name: 'Oven Unit - Temperature Control System - EM_ANT_BAKE_OVEN2.png'
+  description: Oven Unit temperature control system diagram — EM_ANT_BAKE_OVEN2 (ANT site, Tunnel Oven 2)
+  mimeType: 'image/png'
+
+# ── Flow Wrapper Unit Engineering Diagrams — CHI site (4 × UNIT_CHI_PACK) ────
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_FLOW_WRAPPER_UNIT_COMPRESSED_AIR_DISTRIBUTION_SYSTEM_UNIT_CHI_PACK'
+  name: 'Flow Wrapper Unit - Compressed Air Distribution System - UNIT_CHI_PACK.png'
+  description: Flow Wrapper Unit compressed air distribution system — UNIT_CHI_PACK (CHI site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_FLOW_WRAPPER_UNIT_EQUIPMENT_LAYOUT_UNIT_CHI_PACK'
+  name: 'Flow Wrapper Unit - Equipment Layout - UNIT_CHI_PACK.png'
+  description: Flow Wrapper Unit equipment layout — UNIT_CHI_PACK (CHI site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_FLOW_WRAPPER_UNIT_PRODUCT_CONVEYOR_CONTROL_SYSTEM_UNIT_CHI_PACK'
+  name: 'Flow Wrapper Unit - Product Conveyor Control System - UNIT_CHI_PACK.png'
+  description: Flow Wrapper Unit product conveyor control system — UNIT_CHI_PACK (CHI site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_FLOW_WRAPPER_UNIT_SEALING_TEMPERATURE_CONTROL_SYSTEM_UNIT_CHI_PACK'
+  name: 'Flow Wrapper Unit - Sealing Temperature Control System - UNIT_CHI_PACK.png'
+  description: Flow Wrapper Unit sealing temperature control system — UNIT_CHI_PACK (CHI site)
+  mimeType: 'image/png'
+
+# ── Flow Wrapper Unit Engineering Diagrams — ANT site (4 × UNIT_ANT_PACK) ────
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_FLOW_WRAPPER_UNIT_COMPRESSED_AIR_DISTRIBUTION_SYSTEM_UNIT_ANT_PACK'
+  name: 'Flow Wrapper Unit - Compressed Air Distribution System - UNIT_ANT_PACK.png'
+  description: Flow Wrapper Unit compressed air distribution system — UNIT_ANT_PACK (ANT site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_FLOW_WRAPPER_UNIT_EQUIPMENT_LAYOUT_UNIT_ANT_PACK'
+  name: 'Flow Wrapper Unit - Equipment Layout - UNIT_ANT_PACK.png'
+  description: Flow Wrapper Unit equipment layout — UNIT_ANT_PACK (ANT site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_FLOW_WRAPPER_UNIT_PRODUCT_CONVEYOR_CONTROL_SYSTEM_UNIT_ANT_PACK'
+  name: 'Flow Wrapper Unit - Product Conveyor Control System - UNIT_ANT_PACK.png'
+  description: Flow Wrapper Unit product conveyor control system — UNIT_ANT_PACK (ANT site)
+  mimeType: 'image/png'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_FLOW_WRAPPER_UNIT_SEALING_TEMPERATURE_CONTROL_SYSTEM_UNIT_ANT_PACK'
+  name: 'Flow Wrapper Unit - Sealing Temperature Control System - UNIT_ANT_PACK.png'
+  description: Flow Wrapper Unit sealing temperature control system — UNIT_ANT_PACK (ANT site)
+  mimeType: 'image/png'
+
+
+# -- Cookie Manufacturing Product Specs and Production Orders (FILE_COOKIE_001-017) --
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_001'
+  name: 'Cookie_Product_Spec_Classic_Choc_Chip.pdf'
+  description: Product specification sheet for Classic Chocolate Chip Cookie covering product definition, production segment, and initial production request.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_002'
+  name: 'Cookie_Product_Spec_Oat_Raisin.pdf'
+  description: Product specification sheet for Oat and Raisin Cookie covering product definition, production segment, and initial production request.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_003'
+  name: 'Cookie_Product_Spec_Shortbread_Butter.pdf'
+  description: Product specification sheet for Shortbread Butter Cookie covering product definition, production segment, and initial production request.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_004'
+  name: 'Cookie_Product_Spec_Double_Choc.pdf'
+  description: Product specification sheet for Double Chocolate Cookie covering product definition, production segment, and initial production request.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_005'
+  name: 'Cookie_Product_Spec_Digestive_Biscuit.pdf'
+  description: Product specification sheet for Digestive Biscuit Cookie covering product definition, production segment, and initial production request.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_006'
+  name: 'Cookie_Production_Order_Choc_Chip_Dough_Mix.pdf'
+  description: Production order for Chocolate Chip Cookie dough mixing batch on Chicago mixing unit.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_007'
+  name: 'Cookie_Production_Order_Oat_Raisin_Dough_Mix.pdf'
+  description: Production order for Oat and Raisin Cookie dough preparation and dosing execution.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_008'
+  name: 'Cookie_Production_Order_Shortbread_Dough_Mix.pdf'
+  description: Production order for Shortbread butter dough mixing with controlled fat creaming and sugar incorporation.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_009'
+  name: 'Cookie_Production_Order_Double_Choc_Dough_Mix.pdf'
+  description: Production order for Double Chocolate cookie dough mixing with cocoa powder and emulsifier addition.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_010'
+  name: 'Cookie_Production_Order_Choc_Chip_Forming.pdf'
+  description: Production order for Classic Chocolate Chip cookie rotary mould forming run with piece weight sampling.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_011'
+  name: 'Cookie_Production_Order_Oat_Raisin_Forming.pdf'
+  description: Production order for Oat and Raisin cookie wire-cut forming with reject divert and piece weight check.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_012'
+  name: 'Cookie_Production_Order_Shortbread_Forming.pdf'
+  description: Production order for Shortbread cookie rotary mould forming with die pressure hold and geometry verification.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_013'
+  name: 'Cookie_Production_Order_Double_Choc_Forming.pdf'
+  description: Production order for Double Chocolate cookie dough sheeting and gauge roll forming with cut alignment check.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_014'
+  name: 'Cookie_Production_Order_Choc_Chip_Baking.pdf'
+  description: Production order for Classic Chocolate Chip cookie tunnel oven bake with zone temperature and airflow profile.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_015'
+  name: 'Cookie_Production_Order_Shortbread_Baking.pdf'
+  description: Production order for Shortbread cookie tunnel oven bake with conveyor speed hold and exit moisture target.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_016'
+  name: 'Cookie_Production_Order_Choc_Chip_Cooling.pdf'
+  description: Production order for Classic Chocolate Chip cookie post-bake cooling conveyor run with exit temperature check.
+  mimeType: 'application/pdf'
+
+- space: '{{ isaInstanceSpace }}'
+  externalId: '{{ userPrefix }}FILE_COOKIE_017'
+  name: 'Cookie_Production_Order_Digestive_Cooling.pdf'
+  description: Production order for Digestive Biscuit post-bake cooling with cooling table dwell time and moisture confirmation.
+  mimeType: 'application/pdf'

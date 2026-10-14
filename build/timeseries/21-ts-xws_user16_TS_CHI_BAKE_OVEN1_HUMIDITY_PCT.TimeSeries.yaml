@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_CHI_BAKE_OVEN1_HUMIDITY_PCT
+name: CHI Oven 1 Humidity Pct
+description: Oven-centered production signal for anomaly, downtime, and quality impact
+  correlation.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: '%'
+isString: false
+isStep: false

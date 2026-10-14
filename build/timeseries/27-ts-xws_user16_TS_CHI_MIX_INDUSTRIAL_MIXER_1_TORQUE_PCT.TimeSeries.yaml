@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_CHI_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT
+name: CHI Industrial Mixer 1 Torque Pct
+description: Production-line support signal correlated with oven incidents and throughput
+  effects.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: '%'
+isString: false
+isStep: false

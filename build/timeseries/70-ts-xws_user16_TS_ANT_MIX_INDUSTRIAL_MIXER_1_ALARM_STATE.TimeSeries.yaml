@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_ANT_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE
+name: ANT Industrial Mixer 1 Alarm State
+description: Production-line support signal correlated with oven incidents and throughput
+  effects.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: state
+isString: false
+isStep: true

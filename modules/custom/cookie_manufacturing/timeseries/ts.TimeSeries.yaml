@@ -1,0 +1,1425 @@
+﻿- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_TEMP_DEGC'
+  name: 'CHI Oven 1 Temp Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_PRESSURE_BAR'
+  name: 'CHI Oven 2 Pressure Bar'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'bar'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_AIRFLOW_M3H'
+  name: 'CHI Oven 1 Airflow M3H'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm3/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_BURNER_LOAD_PCT'
+  name: 'CHI Oven 2 Burner Load Pct'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_ZONE_DELTA_DEGC'
+  name: 'CHI Oven 1 Zone Delta Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_VIBRATION_MM_S'
+  name: 'CHI Oven 2 Vibration Mm S'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_MOTOR_CURRENT_A'
+  name: 'CHI Oven 1 Motor Current A'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_SPEED_MPM'
+  name: 'CHI Oven 2 Speed Mpm'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_THROUGHPUT_KG_H'
+  name: 'CHI Oven 1 Throughput Kg H'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_TEMP_DEGC'
+  name: 'CHI Oven 2 Temp Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_PRESSURE_BAR'
+  name: 'CHI Oven 1 Pressure Bar'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'bar'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_AIRFLOW_M3H'
+  name: 'CHI Oven 2 Airflow M3H'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm3/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_BURNER_LOAD_PCT'
+  name: 'CHI Oven 1 Burner Load Pct'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_ZONE_DELTA_DEGC'
+  name: 'CHI Oven 2 Zone Delta Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_VIBRATION_MM_S'
+  name: 'CHI Oven 1 Vibration Mm S'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_MOTOR_CURRENT_A'
+  name: 'CHI Oven 2 Motor Current A'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_SPEED_MPM'
+  name: 'CHI Oven 1 Speed Mpm'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_THROUGHPUT_KG_H'
+  name: 'CHI Oven 2 Throughput Kg H'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_OPERATING_STATE'
+  name: 'CHI Oven 2 Operating State'
+  description: 'Discrete oven state for downtime and corrective maintenance alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_ALARM_STATE'
+  name: 'CHI Oven 2 Alarm State'
+  description: 'Discrete oven state for downtime and corrective maintenance alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_HUMIDITY_PCT'
+  name: 'CHI Oven 1 Humidity Pct'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_HUMIDITY_PCT'
+  name: 'CHI Oven 2 Humidity Pct'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_EXHAUST_TEMP_DEGC'
+  name: 'CHI Oven 1 Exhaust Temp Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN2_EXHAUST_TEMP_DEGC'
+  name: 'CHI Oven 2 Exhaust Temp Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_OPERATING_STATE'
+  name: 'CHI Oven 1 Operating State'
+  description: 'Discrete oven state for downtime and corrective maintenance alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_BAKE_OVEN1_ALARM_STATE'
+  name: 'CHI Oven 1 Alarm State'
+  description: 'Discrete oven state for downtime and corrective maintenance alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT'
+  name: 'CHI Industrial Mixer 1 Torque Pct'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_MIX_WEIGH_HOPPER_1_TEMP_DEGC'
+  name: 'CHI Weigh Hopper 1 Temp Degc'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_PACK_FLOW_WRAPPER_PRESSURE_BAR'
+  name: 'CHI Flow Wrapper Pressure Bar'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'bar'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_COOL_COOLING_TABLE_SPEED_MPM'
+  name: 'CHI Cooling Table Speed Mpm'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H'
+  name: 'CHI Air Compressor Throughput Kg H'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_FORM_ROTARY_MOLDER_VIBRATION_MM_S'
+  name: 'CHI Rotary Molder Vibration Mm S'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_FORM_WIRECUT_MACHINE_LOAD_PCT'
+  name: 'CHI WireCut Machine Load Pct'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE'
+  name: 'CHI Dough Sheeter and Gauge Rolls Operating State'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE'
+  name: 'CHI Industrial Mixer 1 Alarm State'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_TEMP_DEGC'
+  name: 'ANT Oven 1 Temp Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_PRESSURE_BAR'
+  name: 'ANT Oven 2 Pressure Bar'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'bar'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_AIRFLOW_M3H'
+  name: 'ANT Oven 1 Airflow M3H'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm3/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_BURNER_LOAD_PCT'
+  name: 'ANT Oven 2 Burner Load Pct'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_ZONE_DELTA_DEGC'
+  name: 'ANT Oven 1 Zone Delta Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_VIBRATION_MM_S'
+  name: 'ANT Oven 2 Vibration Mm S'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_MOTOR_CURRENT_A'
+  name: 'ANT Oven 1 Motor Current A'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_SPEED_MPM'
+  name: 'ANT Oven 2 Speed Mpm'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_THROUGHPUT_KG_H'
+  name: 'ANT Oven 1 Throughput Kg H'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_TEMP_DEGC'
+  name: 'ANT Oven 2 Temp Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_PRESSURE_BAR'
+  name: 'ANT Oven 1 Pressure Bar'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'bar'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_AIRFLOW_M3H'
+  name: 'ANT Oven 2 Airflow M3H'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm3/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_BURNER_LOAD_PCT'
+  name: 'ANT Oven 1 Burner Load Pct'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_ZONE_DELTA_DEGC'
+  name: 'ANT Oven 2 Zone Delta Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_VIBRATION_MM_S'
+  name: 'ANT Oven 1 Vibration Mm S'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_MOTOR_CURRENT_A'
+  name: 'ANT Oven 2 Motor Current A'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_SPEED_MPM'
+  name: 'ANT Oven 1 Speed Mpm'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_THROUGHPUT_KG_H'
+  name: 'ANT Oven 2 Throughput Kg H'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_OPERATING_STATE'
+  name: 'ANT Oven 2 Operating State'
+  description: 'Discrete oven state for downtime and corrective maintenance alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_ALARM_STATE'
+  name: 'ANT Oven 2 Alarm State'
+  description: 'Discrete oven state for downtime and corrective maintenance alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_HUMIDITY_PCT'
+  name: 'ANT Oven 1 Humidity Pct'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_HUMIDITY_PCT'
+  name: 'ANT Oven 2 Humidity Pct'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_EXHAUST_TEMP_DEGC'
+  name: 'ANT Oven 1 Exhaust Temp Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN2_EXHAUST_TEMP_DEGC'
+  name: 'ANT Oven 2 Exhaust Temp Degc'
+  description: 'Oven-centered production signal for anomaly, downtime, and quality impact correlation.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_OPERATING_STATE'
+  name: 'ANT Oven 1 Operating State'
+  description: 'Discrete oven state for downtime and corrective maintenance alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_BAKE_OVEN1_ALARM_STATE'
+  name: 'ANT Oven 1 Alarm State'
+  description: 'Discrete oven state for downtime and corrective maintenance alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_MIX_INDUSTRIAL_MIXER_1_TORQUE_PCT'
+  name: 'ANT Industrial Mixer 1 Torque Pct'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_MIX_WEIGH_HOPPER_1_TEMP_DEGC'
+  name: 'ANT Weigh Hopper 1 Temp Degc'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_PACK_FLOW_WRAPPER_PRESSURE_BAR'
+  name: 'ANT Flow Wrapper Pressure Bar'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'bar'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_COOL_COOLING_TABLE_SPEED_MPM'
+  name: 'ANT Cooling Table Speed Mpm'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_UTIL_AIR_COMPRESSOR_THROUGHPUT_KG_H'
+  name: 'ANT Air Compressor Throughput Kg H'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_FORM_ROTARY_MOLDER_VIBRATION_MM_S'
+  name: 'ANT Rotary Molder Vibration Mm S'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_FORM_WIRECUT_MACHINE_LOAD_PCT'
+  name: 'ANT WireCut Machine Load Pct'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_FORM_DOUGH_SHEETER_AND_GAUGE_ROLLS_OPERATING_STATE'
+  name: 'ANT Dough Sheeter and Gauge Rolls Operating State'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_MIX_INDUSTRIAL_MIXER_1_ALARM_STATE'
+  name: 'ANT Industrial Mixer 1 Alarm State'
+  description: 'Production-line support signal correlated with oven incidents and throughput effects.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_RAW_A_BATTERY_PCT'
+  name: 'CHI Raw Material Forklift A Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_RAW_A_LOAD_KG'
+  name: 'CHI Raw Material Forklift A Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH'
+  name: 'CHI Raw Material Forklift A Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_RAW_A_OPERATING_STATE'
+  name: 'CHI Raw Material Forklift A Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_RAW_B_BATTERY_PCT'
+  name: 'CHI Raw Material Forklift B Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_RAW_B_LOAD_KG'
+  name: 'CHI Raw Material Forklift B Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH'
+  name: 'CHI Raw Material Forklift B Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_RAW_B_OPERATING_STATE'
+  name: 'CHI Raw Material Forklift B Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_SEMI_A_BATTERY_PCT'
+  name: 'CHI Semi-Finished Forklift A Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_SEMI_A_LOAD_KG'
+  name: 'CHI Semi-Finished Forklift A Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH'
+  name: 'CHI Semi-Finished Forklift A Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_SEMI_A_OPERATING_STATE'
+  name: 'CHI Semi-Finished Forklift A Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_SEMI_B_BATTERY_PCT'
+  name: 'CHI Semi-Finished Forklift B Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_SEMI_B_LOAD_KG'
+  name: 'CHI Semi-Finished Forklift B Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH'
+  name: 'CHI Semi-Finished Forklift B Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_SEMI_B_OPERATING_STATE'
+  name: 'CHI Semi-Finished Forklift B Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_FIN_A_BATTERY_PCT'
+  name: 'CHI Finished Goods Forklift A Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_FIN_A_LOAD_KG'
+  name: 'CHI Finished Goods Forklift A Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH'
+  name: 'CHI Finished Goods Forklift A Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_FIN_A_OPERATING_STATE'
+  name: 'CHI Finished Goods Forklift A Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_FIN_B_BATTERY_PCT'
+  name: 'CHI Finished Goods Forklift B Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_FIN_B_LOAD_KG'
+  name: 'CHI Finished Goods Forklift B Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH'
+  name: 'CHI Finished Goods Forklift B Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_FORKLIFT_FIN_B_OPERATING_STATE'
+  name: 'CHI Finished Goods Forklift B Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM'
+  name: 'CHI Raw Material Conveyor 1 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A'
+  name: 'CHI Raw Material Conveyor 1 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S'
+  name: 'CHI Raw Material Conveyor 1 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_RAW_1_OPERATING_STATE'
+  name: 'CHI Raw Material Conveyor 1 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM'
+  name: 'CHI Raw Material Conveyor 2 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A'
+  name: 'CHI Raw Material Conveyor 2 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S'
+  name: 'CHI Raw Material Conveyor 2 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_RAW_2_OPERATING_STATE'
+  name: 'CHI Raw Material Conveyor 2 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM'
+  name: 'CHI Semi-Finished Conveyor 1 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A'
+  name: 'CHI Semi-Finished Conveyor 1 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S'
+  name: 'CHI Semi-Finished Conveyor 1 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_SEMI_1_OPERATING_STATE'
+  name: 'CHI Semi-Finished Conveyor 1 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM'
+  name: 'CHI Semi-Finished Conveyor 2 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A'
+  name: 'CHI Semi-Finished Conveyor 2 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S'
+  name: 'CHI Semi-Finished Conveyor 2 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_SEMI_2_OPERATING_STATE'
+  name: 'CHI Semi-Finished Conveyor 2 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM'
+  name: 'CHI Finished Goods Conveyor 1 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A'
+  name: 'CHI Finished Goods Conveyor 1 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S'
+  name: 'CHI Finished Goods Conveyor 1 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_FIN_1_OPERATING_STATE'
+  name: 'CHI Finished Goods Conveyor 1 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM'
+  name: 'CHI Finished Goods Conveyor 2 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A'
+  name: 'CHI Finished Goods Conveyor 2 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S'
+  name: 'CHI Finished Goods Conveyor 2 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_CONVEYOR_FIN_2_OPERATING_STATE'
+  name: 'CHI Finished Goods Conveyor 2 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_SILO_1_FILL_LEVEL_PCT'
+  name: 'CHI Silo 1 Fill Level Pct'
+  description: 'Bulk silo fill level for raw material storage.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_SILO_1_TEMPERATURE_DEGC'
+  name: 'CHI Silo 1 Temperature Degc'
+  description: 'Internal temperature of raw material bulk silo.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_SILO_2_FILL_LEVEL_PCT'
+  name: 'CHI Silo 2 Fill Level Pct'
+  description: 'Bulk silo fill level for raw material storage.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_SILO_2_TEMPERATURE_DEGC'
+  name: 'CHI Silo 2 Temperature Degc'
+  description: 'Internal temperature of raw material bulk silo.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_LIQUID_SKID_FLOW_RATE_LH'
+  name: 'CHI Liquid Ingredient Skid Flow Rate Lh'
+  description: 'Liquid ingredient flow rate from dosing skid.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'l/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_CHI_STOR_LIQUID_SKID_PRESSURE_BAR'
+  name: 'CHI Liquid Ingredient Skid Pressure Bar'
+  description: 'Process line pressure on liquid ingredient skid.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'bar'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_RAW_A_BATTERY_PCT'
+  name: 'ANT Raw Material Forklift A Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_RAW_A_LOAD_KG'
+  name: 'ANT Raw Material Forklift A Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_RAW_A_TRAVEL_SPEED_KMH'
+  name: 'ANT Raw Material Forklift A Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_RAW_A_OPERATING_STATE'
+  name: 'ANT Raw Material Forklift A Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_RAW_B_BATTERY_PCT'
+  name: 'ANT Raw Material Forklift B Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_RAW_B_LOAD_KG'
+  name: 'ANT Raw Material Forklift B Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_RAW_B_TRAVEL_SPEED_KMH'
+  name: 'ANT Raw Material Forklift B Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_RAW_B_OPERATING_STATE'
+  name: 'ANT Raw Material Forklift B Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_SEMI_A_BATTERY_PCT'
+  name: 'ANT Semi-Finished Forklift A Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_SEMI_A_LOAD_KG'
+  name: 'ANT Semi-Finished Forklift A Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_SEMI_A_TRAVEL_SPEED_KMH'
+  name: 'ANT Semi-Finished Forklift A Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_SEMI_A_OPERATING_STATE'
+  name: 'ANT Semi-Finished Forklift A Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_SEMI_B_BATTERY_PCT'
+  name: 'ANT Semi-Finished Forklift B Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_SEMI_B_LOAD_KG'
+  name: 'ANT Semi-Finished Forklift B Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_SEMI_B_TRAVEL_SPEED_KMH'
+  name: 'ANT Semi-Finished Forklift B Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_SEMI_B_OPERATING_STATE'
+  name: 'ANT Semi-Finished Forklift B Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_FIN_A_BATTERY_PCT'
+  name: 'ANT Finished Goods Forklift A Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_FIN_A_LOAD_KG'
+  name: 'ANT Finished Goods Forklift A Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_FIN_A_TRAVEL_SPEED_KMH'
+  name: 'ANT Finished Goods Forklift A Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_FIN_A_OPERATING_STATE'
+  name: 'ANT Finished Goods Forklift A Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_FIN_B_BATTERY_PCT'
+  name: 'ANT Finished Goods Forklift B Battery Pct'
+  description: 'Forklift battery state of charge for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_FIN_B_LOAD_KG'
+  name: 'ANT Finished Goods Forklift B Load Kg'
+  description: 'Current load weight on forks for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'kg'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_FIN_B_TRAVEL_SPEED_KMH'
+  name: 'ANT Finished Goods Forklift B Travel Speed Kmh'
+  description: 'Forklift travel speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'km/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_FORKLIFT_FIN_B_OPERATING_STATE'
+  name: 'ANT Finished Goods Forklift B Operating State'
+  description: 'Discrete forklift operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_RAW_1_BELT_SPEED_MPM'
+  name: 'ANT Raw Material Conveyor 1 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A'
+  name: 'ANT Raw Material Conveyor 1 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_RAW_1_VIBRATION_MM_S'
+  name: 'ANT Raw Material Conveyor 1 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_RAW_1_OPERATING_STATE'
+  name: 'ANT Raw Material Conveyor 1 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_RAW_2_BELT_SPEED_MPM'
+  name: 'ANT Raw Material Conveyor 2 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_RAW_2_MOTOR_CURRENT_A'
+  name: 'ANT Raw Material Conveyor 2 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_RAW_2_VIBRATION_MM_S'
+  name: 'ANT Raw Material Conveyor 2 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_RAW_2_OPERATING_STATE'
+  name: 'ANT Raw Material Conveyor 2 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_SEMI_1_BELT_SPEED_MPM'
+  name: 'ANT Semi-Finished Conveyor 1 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_SEMI_1_MOTOR_CURRENT_A'
+  name: 'ANT Semi-Finished Conveyor 1 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_SEMI_1_VIBRATION_MM_S'
+  name: 'ANT Semi-Finished Conveyor 1 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_SEMI_1_OPERATING_STATE'
+  name: 'ANT Semi-Finished Conveyor 1 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_SEMI_2_BELT_SPEED_MPM'
+  name: 'ANT Semi-Finished Conveyor 2 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A'
+  name: 'ANT Semi-Finished Conveyor 2 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_SEMI_2_VIBRATION_MM_S'
+  name: 'ANT Semi-Finished Conveyor 2 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_SEMI_2_OPERATING_STATE'
+  name: 'ANT Semi-Finished Conveyor 2 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_FIN_1_BELT_SPEED_MPM'
+  name: 'ANT Finished Goods Conveyor 1 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_FIN_1_MOTOR_CURRENT_A'
+  name: 'ANT Finished Goods Conveyor 1 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_FIN_1_VIBRATION_MM_S'
+  name: 'ANT Finished Goods Conveyor 1 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_FIN_1_OPERATING_STATE'
+  name: 'ANT Finished Goods Conveyor 1 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_FIN_2_BELT_SPEED_MPM'
+  name: 'ANT Finished Goods Conveyor 2 Belt Speed Mpm'
+  description: 'Conveyor belt speed for storage operations.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'm/min'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_FIN_2_MOTOR_CURRENT_A'
+  name: 'ANT Finished Goods Conveyor 2 Motor Current A'
+  description: 'Drive motor current draw for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'A'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_FIN_2_VIBRATION_MM_S'
+  name: 'ANT Finished Goods Conveyor 2 Vibration Mm S'
+  description: 'Belt frame vibration for storage conveyor.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'mm/s'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_CONVEYOR_FIN_2_OPERATING_STATE'
+  name: 'ANT Finished Goods Conveyor 2 Operating State'
+  description: 'Discrete conveyor operating state for maintenance and downtime alignment.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'state'
+  isString: false
+  isStep: true
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_SILO_1_FILL_LEVEL_PCT'
+  name: 'ANT Silo 1 Fill Level Pct'
+  description: 'Bulk silo fill level for raw material storage.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_SILO_1_TEMPERATURE_DEGC'
+  name: 'ANT Silo 1 Temperature Degc'
+  description: 'Internal temperature of raw material bulk silo.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_SILO_2_FILL_LEVEL_PCT'
+  name: 'ANT Silo 2 Fill Level Pct'
+  description: 'Bulk silo fill level for raw material storage.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: '%'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_SILO_2_TEMPERATURE_DEGC'
+  name: 'ANT Silo 2 Temperature Degc'
+  description: 'Internal temperature of raw material bulk silo.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'degC'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_LIQUID_SKID_FLOW_RATE_LH'
+  name: 'ANT Liquid Ingredient Skid Flow Rate Lh'
+  description: 'Liquid ingredient flow rate from dosing skid.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'l/h'
+  isString: false
+  isStep: false
+
+- externalId: '{{ userPrefix }}TS_ANT_STOR_LIQUID_SKID_PRESSURE_BAR'
+  name: 'ANT Liquid Ingredient Skid Pressure Bar'
+  description: 'Process line pressure on liquid ingredient skid.'
+  dataSetExternalId: '{{ datasetExternalId }}'
+  unit: 'bar'
+  isString: false
+  isStep: false

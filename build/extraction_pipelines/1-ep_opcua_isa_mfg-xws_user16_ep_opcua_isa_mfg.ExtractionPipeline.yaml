@@ -1,0 +1,8 @@
+externalId: xws_user16_ep_opcua_isa_mfg
+name: xws_user16_OPC-UA ISA Manufacturing
+dataSetExternalId: xws_user16_ds_isa_mfg
+description: OPC-UA extraction pipeline for ISA Manufacturing - remote configuration
+source: opc-ua
+schedule: Continuous
+metadata:
+  origin: cognite-toolkit

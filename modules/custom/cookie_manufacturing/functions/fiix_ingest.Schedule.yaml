@@ -1,0 +1,7 @@
+functionExternalId: "{{ functionExternalId }}"
+name: "{{ userPrefixDash }}fiix-ingest-schedule"
+cronExpression: "*/5 * * * *"
+description: "Runs the Fiix work order ingest every 5 minutes"
+authentication:
+  clientId: "{{ scheduleClientId }}"
+  clientSecret: "{{ scheduleClientSecret }}"

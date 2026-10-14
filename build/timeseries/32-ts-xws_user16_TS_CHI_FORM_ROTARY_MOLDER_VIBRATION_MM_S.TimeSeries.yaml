@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_CHI_FORM_ROTARY_MOLDER_VIBRATION_MM_S
+name: CHI Rotary Molder Vibration Mm S
+description: Production-line support signal correlated with oven incidents and throughput
+  effects.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: mm/s
+isString: false
+isStep: false

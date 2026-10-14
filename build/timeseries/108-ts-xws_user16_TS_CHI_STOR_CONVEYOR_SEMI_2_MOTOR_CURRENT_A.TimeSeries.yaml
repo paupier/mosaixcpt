@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_CHI_STOR_CONVEYOR_SEMI_2_MOTOR_CURRENT_A
+name: CHI Semi-Finished Conveyor 2 Motor Current A
+description: Drive motor current draw for storage conveyor.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: A
+isString: false
+isStep: false

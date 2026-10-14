@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_ANT_STOR_SILO_2_TEMPERATURE_DEGC
+name: ANT Silo 2 Temperature Degc
+description: Internal temperature of raw material bulk silo.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: degC
+isString: false
+isStep: false

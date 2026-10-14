@@ -1,0 +1,14 @@
+externalId: '{{ userPrefix }}timeseries_tr'
+name: '{{ userPrefix }}ISATimeSeries'
+destination:
+  dataModel:
+    space: {{ isaSchemaSpace }}
+    externalId: {{ edmDataModelExternalId }}
+    version: v1
+    destinationType: ISATimeSeries
+  instanceSpace: {{ isaInstanceSpace }}
+  type: instances
+dataSetExternalId: {{ datasetExternalId }}
+ignoreNullFields: true
+isPublic: true
+conflictMode: upsert

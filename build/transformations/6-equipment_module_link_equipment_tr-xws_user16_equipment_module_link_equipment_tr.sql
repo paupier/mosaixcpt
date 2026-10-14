@@ -1,0 +1,26 @@
+with equip_mod as (
+  select
+    externalId as equip_mod_ext_id,
+    externalId as equip_mod_id,
+    name as equip_mod_name
+  from `xws_user16_rawdb_isa_mfg`.`isa_asset`
+  where 
+    asset_specific = 'EquipmentModule'
+),
+equip AS (
+  SELECT
+  externalId as equip_ext_id,
+  	asset_externalId
+  FROM `xws_user16_rawdb_isa_mfg`.`isa_equipment`
+)
+select
+  equip_mod.equip_mod_ext_id as externalId,
+  equip_mod.equip_mod_id as equipment_module_id,
+  equip_mod.equip_mod_name as equipment_module_name,
+  collect_set(node_reference('xws_user16_spc_inst_isa_mfg', equip_ext_id)) as equipment
+from equip_mod left join equip 
+on equip_mod.equip_mod_ext_id=equip.asset_externalId
+group by 
+  equip_mod.equip_mod_ext_id,
+  equip_mod.equip_mod_id,
+  equip_mod.equip_mod_name

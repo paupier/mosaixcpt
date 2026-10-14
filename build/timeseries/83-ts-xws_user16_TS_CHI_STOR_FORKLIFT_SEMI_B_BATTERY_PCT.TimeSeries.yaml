@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_CHI_STOR_FORKLIFT_SEMI_B_BATTERY_PCT
+name: CHI Semi-Finished Forklift B Battery Pct
+description: Forklift battery state of charge for storage operations.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: '%'
+isString: false
+isStep: false

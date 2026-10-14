@@ -1,0 +1,388 @@
+workflowExternalId: xws_user16_wf_complete_isa_mfg
+version: '1'
+workflowDefinition:
+  description: Run ISA asset build, then overlays in parallel
+  tasks:
+  - externalId: xws_user16_wf_isa_manufacturing_t_isatree
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_isa_asset_tr
+        concurrencyPolicy: fail
+    name: Build ISA Asset Tree
+    description: Create ISAAsset nodes and hierarchy from RAW
+    retries: 3
+    timeout: 3600
+    onFailure: abortWorkflow
+  - externalId: xws_user16_wf_isa_manufacturing_t_enterprise
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_enterprise_tr
+        concurrencyPolicy: fail
+    name: Enterprise overlay
+    description: Upsert Enterprise view fields
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_isatree
+  - externalId: xws_user16_wf_isa_manufacturing_t_site
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_site_tr
+        concurrencyPolicy: fail
+    name: Site overlay
+    description: Upsert Site view fields
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_isatree
+  - externalId: xws_user16_wf_isa_manufacturing_t_area
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_area_tr
+        concurrencyPolicy: fail
+    name: Area overlay
+    description: Upsert Area view fields
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_isatree
+  - externalId: xws_user16_wf_isa_manufacturing_t_process_cell
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_process_cell_tr
+        concurrencyPolicy: fail
+    name: ProcessCell overlay
+    description: Upsert ProcessCell view fields
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_isatree
+  - externalId: xws_user16_wf_isa_manufacturing_t_unit
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_unit_tr
+        concurrencyPolicy: fail
+    name: Unit overlay
+    description: Upsert Unit view fields
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_isatree
+  - externalId: xws_user16_wf_isa_manufacturing_t_equipment_module
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_equipment_module_tr
+        concurrencyPolicy: fail
+    name: EquipmentModule overlay
+    description: Upsert EquipmentModule view fields
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_isatree
+  - externalId: xws_user16_wf_isa_manufacturing_t_personnel
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_personnel_tr
+        concurrencyPolicy: fail
+    name: Personnel
+    description: Create Personnel nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_site
+  - externalId: xws_user16_wf_isa_manufacturing_t_control_module
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_control_module_tr
+        concurrencyPolicy: fail
+    name: Control Module
+    description: Create Control Module nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_equipment_module
+  - externalId: xws_user16_wf_isa_manufacturing_t_control_module_asset
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_control_module_asset_tr
+        concurrencyPolicy: fail
+    name: Control Module Asset Overlay
+    description: Create Control Module Asset nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_control_module
+  - externalId: xws_user16_wf_isa_manufacturing_t_files
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_files_tr
+        concurrencyPolicy: fail
+    name: Files
+    description: Create Files nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_enterprise
+    - externalId: xws_user16_wf_isa_manufacturing_t_site
+    - externalId: xws_user16_wf_isa_manufacturing_t_area
+    - externalId: xws_user16_wf_isa_manufacturing_t_process_cell
+    - externalId: xws_user16_wf_isa_manufacturing_t_unit
+    - externalId: xws_user16_wf_isa_manufacturing_t_equipment_module
+  - externalId: xws_user16_wf_isa_manufacturing_t_equipment
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_equipment_tr
+        concurrencyPolicy: fail
+    name: Equipment
+    description: Create Equipment nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_files
+  - externalId: xws_user16_wf_isa_manufacturing_t_equipment_module_equipment
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_equipment_module_link_equipment_tr
+        concurrencyPolicy: fail
+    name: EquipmentModule - Equipment Relationship
+    description: Create EquipmentModule - Equipment relationship
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_equipment_module
+    - externalId: xws_user16_wf_isa_manufacturing_t_equipment
+  - externalId: xws_user16_wf_isa_manufacturing_t_work_order
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_work_order_tr
+        concurrencyPolicy: fail
+    name: Work Order
+    description: Create Work Order nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_equipment
+    - externalId: xws_user16_wf_isa_manufacturing_t_personnel
+  - externalId: xws_user16_wf_isa_manufacturing_t_timeseries
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_timeseries_tr
+        concurrencyPolicy: fail
+    name: TimeSeries
+    description: Create TimeSeries nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_equipment
+  - externalId: xws_user16_wf_isa_manufacturing_t_work_order_timeseries
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_work_order_timeseries_tr
+        concurrencyPolicy: fail
+    name: Work Order - TimeSeries Relationship
+    description: Create Work Order - TimeSeries relationship
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_work_order
+    - externalId: xws_user16_wf_isa_manufacturing_t_timeseries
+  - externalId: xws_user16_wf_isa_manufacturing_t_recipe
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_recipe_tr
+        concurrencyPolicy: fail
+    name: Recipe
+    description: Create Recipe nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+  - externalId: xws_user16_wf_isa_manufacturing_t_batch
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_batch_tr
+        concurrencyPolicy: fail
+    name: Batch
+    description: Create Batch nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_recipe
+    - externalId: xws_user16_wf_isa_manufacturing_t_work_order
+    - externalId: xws_user16_wf_isa_manufacturing_t_site
+  - externalId: xws_user16_wf_isa_manufacturing_t_material
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_material_tr
+        concurrencyPolicy: fail
+    name: Material
+    description: Create Material nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_batch
+  - externalId: xws_user16_wf_isa_manufacturing_t_material_lot
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_material_lot_tr
+        concurrencyPolicy: fail
+    name: MaterialLot
+    description: Create MaterialLot nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_material
+  - externalId: xws_user16_wf_isa_manufacturing_t_quality_result
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_quality_result_tr
+        concurrencyPolicy: fail
+    name: QualityResult
+    description: Create QualityResult nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_material_lot
+  - externalId: xws_user16_wf_isa_manufacturing_t_product_request
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_product_request_tr
+        concurrencyPolicy: fail
+    name: ProductRequest
+    description: Create ProductRequest nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_work_order
+  - externalId: xws_user16_wf_isa_manufacturing_t_procedure
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_procedure_tr
+        concurrencyPolicy: fail
+    name: Procedure
+    description: Create Procedure nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_batch
+  - externalId: xws_user16_wf_isa_manufacturing_t_product_segment
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_product_segment_tr
+        concurrencyPolicy: fail
+    name: ProductSegment
+    description: Create ProductSegment nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_material_lot
+  - externalId: xws_user16_wf_isa_manufacturing_t_product_definition
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_product_definition_tr
+        concurrencyPolicy: fail
+    name: ProductDefinition
+    description: Create ProductDefinition nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_product_segment
+  - externalId: xws_user16_wf_isa_manufacturing_t_process_parameter
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_process_parameter_tr
+        concurrencyPolicy: fail
+    name: ProcessParameter
+    description: Create ProcessParameter nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_product_segment
+  - externalId: xws_user16_wf_isa_manufacturing_t_unit_procedure
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_unit_procedure_tr
+        concurrencyPolicy: fail
+    name: UnitProcedure
+    description: Create UnitProcedure nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_procedure
+  - externalId: xws_user16_wf_isa_manufacturing_t_operation
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_operation_tr
+        concurrencyPolicy: fail
+    name: Operation
+    description: Create Operation nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_unit_procedure
+  - externalId: xws_user16_wf_isa_manufacturing_t_phase
+    type: transformation
+    parameters:
+      transformation:
+        externalId: xws_user16_phase_tr
+        concurrencyPolicy: fail
+    name: Phase
+    description: Create Phase nodes
+    retries: 3
+    timeout: 3600
+    onFailure: skipTask
+    dependsOn:
+    - externalId: xws_user16_wf_isa_manufacturing_t_operation

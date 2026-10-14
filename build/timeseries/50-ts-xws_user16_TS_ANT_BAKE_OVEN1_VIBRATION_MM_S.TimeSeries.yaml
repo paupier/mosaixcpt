@@ -1,0 +1,8 @@
+externalId: xws_user16_TS_ANT_BAKE_OVEN1_VIBRATION_MM_S
+name: ANT Oven 1 Vibration Mm S
+description: Oven-centered production signal for anomaly, downtime, and quality impact
+  correlation.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: mm/s
+isString: false
+isStep: false

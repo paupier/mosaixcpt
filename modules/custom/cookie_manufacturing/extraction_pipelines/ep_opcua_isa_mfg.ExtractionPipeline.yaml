@@ -1,0 +1,8 @@
+externalId: '{{ extractionPipelineExternalId }}'
+name: '{{ userPrefix }}OPC-UA ISA Manufacturing'
+dataSetExternalId: '{{ datasetExternalId }}'
+description: 'OPC-UA extraction pipeline for ISA Manufacturing - remote configuration'
+source: 'opc-ua'
+schedule: Continuous
+metadata:
+  origin: cognite-toolkit

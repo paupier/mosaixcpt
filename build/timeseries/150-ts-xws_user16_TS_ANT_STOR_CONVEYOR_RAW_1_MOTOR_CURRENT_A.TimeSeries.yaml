@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_ANT_STOR_CONVEYOR_RAW_1_MOTOR_CURRENT_A
+name: ANT Raw Material Conveyor 1 Motor Current A
+description: Drive motor current draw for storage conveyor.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: A
+isString: false
+isStep: false

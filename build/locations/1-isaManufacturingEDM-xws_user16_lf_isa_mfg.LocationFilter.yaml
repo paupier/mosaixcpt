@@ -1,0 +1,11 @@
+externalId: xws_user16_lf_isa_mfg
+name: xws_user16_ISA-Location-EDM
+description: This is the location ISA Manufacturing Location Enterprise Data Model
+  (EDM), including all views and interfaces.
+dataModels:
+- externalId: xws_user16_dm_isa_mfg
+  space: xws_user16_spc_dm_isa_mfg
+  version: v1
+instanceSpaces:
+- xws_user16_spc_inst_isa_mfg
+dataModelingType: DATA_MODELING_ONLY

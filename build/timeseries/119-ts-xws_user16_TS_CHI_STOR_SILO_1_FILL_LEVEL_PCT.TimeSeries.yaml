@@ -1,0 +1,7 @@
+externalId: xws_user16_TS_CHI_STOR_SILO_1_FILL_LEVEL_PCT
+name: CHI Silo 1 Fill Level Pct
+description: Bulk silo fill level for raw material storage.
+dataSetExternalId: xws_user16_ds_isa_mfg
+unit: '%'
+isString: false
+isStep: false
