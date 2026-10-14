@@ -1,0 +1,12 @@
+environment:
+  name: dev
+  project: <my-project-dev>
+  validation-type: dev
+  selected:
+  - modules/
+
+variables:
+  modules:
+    custom:
+      my_module:
+        my_var: my_value
