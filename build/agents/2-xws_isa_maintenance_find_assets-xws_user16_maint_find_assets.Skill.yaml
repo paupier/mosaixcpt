@@ -1,0 +1,50 @@
+externalId: xws_user16_maint_find_assets
+content: "---\nname: xws-user16-isa-maint-find-assets\ndescription: Find ISA maintenance\
+  \ assets, equipment, hierarchy, and enterprise context.\n---\n\n# ISA maintenance\
+  \ asset finding\n\nUse this skill when the user asks to find an asset, equipment\
+  \ item, maintenance area, site context, asset hierarchy, CMMS reference, ERP reference,\
+  \ or physical equipment attached to a unit or equipment module.\n\nRequired approach:\n\
+  \n1. Resolve the user term against ISAAsset and Equipment. Check exact external\
+  \ ID first, then name and description.\n2. For an ISAAsset, navigate parent and\
+  \ path relationships to show Enterprise, Site, Area, ProcessCell, Unit, and EquipmentModule\
+  \ context when available.\n3. For Equipment, navigate to the linked ISAAsset and\
+  \ Unit so the user understands where the equipment sits in the ISA-95 / ISA-88 structure.\n\
+  4. Return CMMS ID and ERP ID if available on the asset.\n5. Return equipment class,\
+  \ equipment type, manufacturer, model, and serial number when available on equipment.\n\
+  6. State when the graph does not contain the requested relationship.\n\nChicago\
+  \ Oven 1 example from this package (ISA-88 hierarchy — post-remediation):\n\n  -\
+  \ `ENT_CPK_NA` is the North America enterprise.\n  - `SITE_CHI` is the Chicago site\
+  \ under `ENT_CPK_NA`.\n  - `AREA_CHI_PROD` is the Production area under `SITE_CHI`.\n\
+  \  - `PC_CHI_BAKE` is the Baking Process Cell under `AREA_CHI_PROD`.\n  - `UNIT_CHI_BAKE_OVEN1`\
+  \ is the Tunnel Oven 1 Unit under `PC_CHI_BAKE` (ISA-88 §5.3 split — each tunnel\
+  \ oven is independently operable).\n  - `UNIT_CHI_BAKE_OVEN2` is the Tunnel Oven\
+  \ 2 Unit under `PC_CHI_BAKE`.\n  - `EM_CHI_BAKE_OVEN1` is the Equipment Module for\
+  \ CHI Oven 1 under `UNIT_CHI_BAKE_OVEN1`.\n  - `EM_CHI_BAKE_OVEN2` is the Equipment\
+  \ Module for CHI Oven 2 under `UNIT_CHI_BAKE_OVEN2`.\n  - `EQ_CHI_014` (CHI Oven\
+  \ 1, Tunnel Oven) is the primary RCA focus equipment linked to `EM_CHI_BAKE_OVEN1`.\n\
+  \  - `EQ_CHI_015` (CHI Oven 2, Tunnel Oven) is linked to `EM_CHI_BAKE_OVEN2`.\n\
+  \  - Zone/thermal control modules for Oven 1: `CM_COOKIE_001` (PID Zone Control\
+  \ 1), `CM_COOKIE_002` (Burner Management Sequence).\n  - All Oven 1 timeseries are\
+  \ numeric: `TS_CHI_BAKE_OVEN1_TEMP_DEGC` (degC), `TS_CHI_BAKE_OVEN1_PRESSURE_BAR`\
+  \ (bar), `TS_CHI_BAKE_OVEN1_AIRFLOW_M3H` (m3/h), `TS_CHI_BAKE_OVEN1_BURNER_LOAD_PCT`\
+  \ (%), `TS_CHI_BAKE_OVEN1_ZONE_DELTA_DEGC` (degC), `TS_CHI_BAKE_OVEN1_VIBRATION_MM_S`\
+  \ (mm/s), `TS_CHI_BAKE_OVEN1_MOTOR_CURRENT_A` (A), `TS_CHI_BAKE_OVEN1_SPEED_MPM`\
+  \ (m/min), `TS_CHI_BAKE_OVEN1_THROUGHPUT_KG_H` (kg/h), `TS_CHI_BAKE_OVEN1_HUMIDITY_PCT`\
+  \ (%), `TS_CHI_BAKE_OVEN1_EXHAUST_TEMP_DEGC` (degC), `TS_CHI_BAKE_OVEN1_OPERATING_STATE`\
+  \ (numeric state code), `TS_CHI_BAKE_OVEN1_ALARM_STATE` (numeric alarm code).\n\
+  \  - RCA context: CHI Oven 1 experienced a thermal runaway event on 2026-08-01 (peak\
+  \ temperature 199.95°C, zone limit 190°C). Burner load reached 83.6% during ALARM\
+  \ state (CM_COOKIE_002 overrange). Corrective WOs WO_CHI_119, WO_CHI_122, WO_CHI_443\
+  \ document the incidents.\n\n  Good sample question:\n\n  For `UNIT_CHI_BAKE_OVEN1`,\
+  \ the Tunnel Oven 1 Unit at Chicago Site, find the parent asset hierarchy and the\
+  \ linked equipment. If operators report baking temperature deviation on Oven 1,\
+  \ which equipment and signals should maintenance inspect first?\n\n  Good answer\
+  \ structure:\n\n  - Resolved asset or equipment.\n  - Hierarchy path: `ENT_CPK_NA`\
+  \ -> `SITE_CHI` -> `AREA_CHI_PROD` -> `PC_CHI_BAKE` -> `UNIT_CHI_BAKE_OVEN1` ->\
+  \ `EM_CHI_BAKE_OVEN1`.\n  - Linked equipment: `EQ_CHI_014` (CHI Oven 1) — primary\
+  \ RCA focus.\n  - Relevant signals grouped by function: thermal (TEMP, ZONE_DELTA,\
+  \ EXHAUST_TEMP), combustion (BURNER_LOAD, AIRFLOW), mechanical (VIBRATION, MOTOR_CURRENT,\
+  \ SPEED), throughput (THROUGHPUT_KG_H, HUMIDITY), and state (OPERATING_STATE, ALARM_STATE).\n\
+  \  - CMMS/ERP references.\n  - Suggested first inspection focus: `CM_COOKIE_002`\
+  \ (Burner Management) for burner load overrange, then `CM_COOKIE_001` (Zone Control\
+  \ PID) for zone delta deviation, based on confirmed equipment and available telemetry."

@@ -1,5 +1,5 @@
-timestamp: '2026-10-14T14:22:49+00:00'
-duration: 11.86
+timestamp: '2026-10-15T08:57:07+00:00'
+duration: 10.64
 organizationDir: C:/FTDM/ftdm-xws-model
 buildDir: build
 cdfProject: ptec-04
@@ -13,6 +13,38 @@ moduleLineage:
   modulePath: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing
   insightsSummary: {}
   resourceLineage:
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\agents\xws_isa_maintenance_agent.Agent.yaml
+    sourceHash: 15a654b2
+    type:
+      resource_folder: agents
+      kind: Agent
+    builtFile: C:\FTDM\ftdm-xws-model\build\agents\1-xws_isa_maintenance_agent-xws_user16_atlas_isa_maintenance_agent.Agent.yaml
+    identifier:
+      externalId: xws_user16_atlas_isa_maintenance_agent
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\agents\xws_isa_maintenance_analyze_timeseries.Skill.yaml
+    sourceHash: 1571c087
+    type:
+      resource_folder: agents
+      kind: Skill
+    builtFile: C:\FTDM\ftdm-xws-model\build\agents\1-xws_isa_maintenance_analyze_timeseries-xws_user16_maint_analyze_timeseries.Skill.yaml
+    identifier:
+      externalId: xws_user16_maint_analyze_timeseries
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\agents\xws_isa_maintenance_find_assets.Skill.yaml
+    sourceHash: ef9f4891
+    type:
+      resource_folder: agents
+      kind: Skill
+    builtFile: C:\FTDM\ftdm-xws-model\build\agents\2-xws_isa_maintenance_find_assets-xws_user16_maint_find_assets.Skill.yaml
+    identifier:
+      externalId: xws_user16_maint_find_assets
+  - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\agents\xws_isa_maintenance_find_workorders.Skill.yaml
+    sourceHash: 9639a35f
+    type:
+      resource_folder: agents
+      kind: Skill
+    builtFile: C:\FTDM\ftdm-xws-model\build\agents\3-xws_isa_maintenance_find_workorders-xws_user16_maint_find_workorders.Skill.yaml
+    identifier:
+      externalId: xws_user16_maint_find_workorders
   - sourceFile: C:\FTDM\ftdm-xws-model\modules\custom\cookie_manufacturing\data_modeling\ISA_Manufacturing_EDM.DataModel.yaml
     sourceHash: 4207c13a
     type:

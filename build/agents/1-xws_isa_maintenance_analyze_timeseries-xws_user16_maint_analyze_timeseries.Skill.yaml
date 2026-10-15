@@ -1,0 +1,106 @@
+externalId: xws_user16_maint_analyze_timeseries
+content: '---
+
+  name: xws-user16-isa-maint-analyze-timeseries
+
+  description: Find and analyze maintenance-related time series for assets, equipment,
+  and work orders.
+
+  ---
+
+
+  # ISA maintenance time series analysis
+
+
+  Use this skill when the user asks about trends, sensor values, vibration, bearing
+  temperature, pressure, control state, SIS state, operating mode, or time series
+  related to maintenance and reliability.
+
+
+  Required approach:
+
+
+  1. First use the knowledge graph to find ISATimeSeries records linked to the requested
+  asset, equipment, or work order.
+
+  2. Report each signal''s external ID, name, unit, `isStep`, `isString`, linked asset,
+  linked equipment, and linked work order when available.
+
+  3. For numeric signals, use the Analyze TimeSeries tool to retrieve datapoints only
+  after the target signal and time range are clear.
+
+  4. For state/string signals, describe state transitions and missing data carefully;
+  do not calculate numeric aggregates on string state signals.
+
+  5. Correlate maintenance context before giving advice: work order status, related
+  equipment, asset hierarchy, and signal role.
+
+  6. When datapoints are unavailable in the environment, provide the correct signals
+  to trend and the maintenance hypothesis they can test.
+
+
+  Chicago Oven 1 signals from this package — all numeric (`isString: false`), all
+  linked to `EQ_CHI_014`:
+
+
+  - `TS_CHI_BAKE_OVEN1_TEMP_DEGC`: Bake zone temperature, unit `degC`.
+
+  - `TS_CHI_BAKE_OVEN1_ZONE_DELTA_DEGC`: Temperature deviation across bake zones,
+  unit `degC`.
+
+  - `TS_CHI_BAKE_OVEN1_EXHAUST_TEMP_DEGC`: Exhaust temperature, unit `degC`.
+
+  - `TS_CHI_BAKE_OVEN1_PRESSURE_BAR`: Oven internal pressure, unit `bar`.
+
+  - `TS_CHI_BAKE_OVEN1_AIRFLOW_M3H`: Combustion air flow, unit `m3/h`.
+
+  - `TS_CHI_BAKE_OVEN1_BURNER_LOAD_PCT`: Burner load percentage, unit `%`.
+
+  - `TS_CHI_BAKE_OVEN1_VIBRATION_MM_S`: Mechanical vibration velocity, unit `mm/s`.
+
+  - `TS_CHI_BAKE_OVEN1_MOTOR_CURRENT_A`: Conveyor motor current, unit `A`.
+
+  - `TS_CHI_BAKE_OVEN1_SPEED_MPM`: Conveyor belt speed, unit `m/min`.
+
+  - `TS_CHI_BAKE_OVEN1_THROUGHPUT_KG_H`: Product throughput, unit `kg/h`.
+
+  - `TS_CHI_BAKE_OVEN1_HUMIDITY_PCT`: Oven humidity, unit `%`.
+
+  - `TS_CHI_BAKE_OVEN1_OPERATING_STATE`: Numeric operating state code, unit `state`.
+
+  - `TS_CHI_BAKE_OVEN1_ALARM_STATE`: Numeric alarm state code, unit `state`.
+
+
+  Good sample question:
+
+
+  For `EQ_CHI_014` (CHI Oven 1), find the related time series and compare vibration
+  and motor current with bake zone temperature and zone delta. What should a reliability
+  engineer trend before a planned oven inspection?
+
+
+  Good answer structure:
+
+
+  - Resolved equipment: `EQ_CHI_014` (CHI Oven 1) under `EM_CHI_BAKE_OVEN1` (ISA-88
+  post-split EM, linked to `UNIT_CHI_BAKE_OVEN1`).
+
+  - Control modules: `CM_COOKIE_001` (PID Zone Control — governs TEMP, ZONE_DELTA,
+  EXHAUST_TEMP, OPERATING_STATE), `CM_COOKIE_002` (Burner Management Sequence — governs
+  BURNER_LOAD, AIRFLOW, MOTOR_CURRENT, SPEED).
+
+  - Relevant signals grouped for trending: thermal (TEMP_DEGC, ZONE_DELTA_DEGC, EXHAUST_TEMP_DEGC),
+  combustion (BURNER_LOAD_PCT, AIRFLOW_M3H, PRESSURE_BAR), mechanical (VIBRATION_MM_S,
+  MOTOR_CURRENT_A, SPEED_MPM), throughput (THROUGHPUT_KG_H, HUMIDITY_PCT), and state
+  (OPERATING_STATE, ALARM_STATE).
+
+  - RCA reference: on 2026-08-01 CHI Oven 1 reached 199.95°C (ALARM state, limit 190°C);
+  BURNER_LOAD_PCT peaked at 83.6% (CM_COOKIE_002 overrange, safe limit 70%). OPERATING_STATE
+  transitioned from ALARM (4.0) to MAINTENANCE (5.0) at 2026-08-01T11:18Z; corrective
+  WOs WO_CHI_119 and WO_CHI_443 document this event.
+
+  - Suggested reliability interpretation: vibration and motor current together indicate
+  mechanical condition; zone delta and exhaust temperature reveal thermal uniformity;
+  burner load and airflow confirm combustion efficiency; state signals identify operating
+  mode and active alarms at the time of anomaly; final diagnosis requires actual datapoints
+  and maintenance findings.'

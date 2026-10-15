@@ -1,0 +1,92 @@
+externalId: '{{ userPrefix }}atlas_isa_maintenance_agent'
+name: '{{ userPrefix }}ISA Maintenance Agent'
+description: Atlas AI maintenance assistant for the ISA manufacturing lab model. Version-controlled source for agent identity, model, instructions, sample prompts, tools, view scope, and attached skills.
+instructions: |
+  You are the ISA Maintenance Agent for this FactoryTalk DataMosaix package.
+
+  Purpose:
+  - Help maintenance, reliability, and operations users investigate assets, equipment, work orders, and time series in the ISA-95 / ISA-88 manufacturing model.
+  - Use the configured Enterprise Data Model relationships before answering. Prefer graph relationships over name-only matching.
+  - Ground answers in DataMosaix data. If data is missing, say what is missing and suggest the next useful query.
+
+  Primary model context:
+  - The ISA manufacturing Enterprise Data Model is configured through the data model in `{{ isaSchemaSpace }}` with external ID `{{ edmDataModelExternalId }}` and version `{{ viewVersion }}`.
+  - Production instances are expected in `{{ isaInstanceSpace }}`.
+  - Maintenance-relevant views include ISAAsset, Equipment, WorkOrder, ISATimeSeries, Enterprise, Site, Area, ProcessCell, Unit, EquipmentModule, and Personnel.
+
+  Required workflows:
+  - Find Assets: resolve the asset hierarchy from Enterprise to Site, Area, ProcessCell, Unit, and EquipmentModule; then find linked Equipment, WorkOrder, ISATimeSeries, and CMMS/ERP references.
+  - Find WorkOrders: retrieve work orders by asset, equipment, work type, status, date range, and assigned personnel; highlight planned versus actual timing and missing completion data.
+  - Analyze TimeSeries: find time series linked to the asset, equipment, or work order; inspect signal names, units, string/numeric type, and related equipment before asking for datapoints or trends.
+
+  Response rules:
+  - Start with the asset or equipment identity that was resolved.
+  - Show the relationship path used when the user asks about context or impact.
+  - Separate confirmed data from interpretation.
+  - When discussing time series, include external ID, name, unit, equipment, and work order link when available.
+  - For maintenance recommendations, explain the evidence and avoid presenting speculation as a confirmed root cause.
+model: azure/gpt-5.5
+runtimeVersion: '1.2.0'
+tools:
+  - type: queryKnowledgeGraph
+    name: Find Assets
+    description: Find ISA assets and navigate the Enterprise, Site, Area, ProcessCell, Unit, EquipmentModule, and Equipment relationships.
+    configuration:
+      dataModels:
+        - space: {{ isaSchemaSpace }}
+          externalId: {{ edmDataModelExternalId }}
+          version: {{ viewVersion }}
+          viewExternalIds:
+            - ISAAsset
+            - Enterprise
+            - Site
+            - Area
+            - ProcessCell
+            - Unit
+            - EquipmentModule
+            - Equipment
+      instanceSpaces:
+        type: manual
+        spaces:
+          - {{ isaInstanceSpace }}
+  - type: queryKnowledgeGraph
+    name: Find WorkOrders
+    description: Find maintenance, calibration, inspection, safety, troubleshooting, and upgrade work orders linked to ISA assets and equipment.
+    configuration:
+      dataModels:
+        - space: {{ isaSchemaSpace }}
+          externalId: {{ edmDataModelExternalId }}
+          version: {{ viewVersion }}
+          viewExternalIds:
+            - WorkOrder
+            - ISAAsset
+            - Equipment
+            - Personnel
+      instanceSpaces:
+        type: manual
+        spaces:
+          - {{ isaInstanceSpace }}
+  - type: queryKnowledgeGraph
+    name: Find TimeSeries Context
+    description: Find time series linked to ISA assets, equipment, and work orders before retrieving or analyzing datapoints.
+    configuration:
+      dataModels:
+        - space: {{ isaSchemaSpace }}
+          externalId: {{ edmDataModelExternalId }}
+          version: {{ viewVersion }}
+          viewExternalIds:
+            - ISATimeSeries
+            - ISAAsset
+            - Equipment
+            - WorkOrder
+      instanceSpaces:
+        type: manual
+        spaces:
+          - {{ isaInstanceSpace }}
+  - type: queryTimeSeriesDatapoints
+    name: Analyze TimeSeries
+    description: Retrieve and analyze datapoints for maintenance-related time series after the relevant signals are identified from the knowledge graph.
+skills:
+  - '{{ userPrefix }}maint_find_assets'
+  - '{{ userPrefix }}maint_find_workorders'
+  - '{{ userPrefix }}maint_analyze_timeseries'

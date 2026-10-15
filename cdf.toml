@@ -14,6 +14,10 @@ dev = false
 data = true
 functions = true
 
+[alpha_flags]
+agents = true
+agent-skills = true
+
 
 [library.cognite]
 url = "https://github.com/cognitedata/library/releases/download/latest/packages.zip"

@@ -1,0 +1,86 @@
+externalId: xws_user16_maint_find_workorders
+content: '---
+
+  name: xws-user16-isa-maint-find-workorders
+
+  description: Find and summarize maintenance work orders by asset, equipment, status,
+  type, schedule, and assignment.
+
+  ---
+
+
+  # ISA maintenance work order finding
+
+
+  Use this skill when the user asks for work orders, maintenance plans, calibration
+  work, inspections, safety tests, troubleshooting, overdue work, incomplete work,
+  assignments, or schedule status.
+
+
+  Required approach:
+
+
+  1. Resolve the asset or equipment first using the graph.
+
+  2. Query WorkOrder records linked through `assets` or `equipment`.
+
+  3. Summarize `work_order_number`, `work_order_name`, `work_type`, `work_status`,
+  planned start/end, actual start/end, assigned personnel, linked asset, and linked
+  equipment.
+
+  4. Highlight work orders with no `actual_end_time` when they are `In Progress` or
+  `Planned`.
+
+  5. Group by status and work type before recommending planner attention.
+
+  6. Do not invent priority, risk, downtime, or overdue status unless those fields
+  or dates are present in CDF data.
+
+
+  Chicago Oven 1 example from this package — all linked to `EQ_CHI_014` and `UNIT_CHI_BAKE_OVEN1`
+  (ISA-88 post-remediation unit ID):
+
+
+  - `WO_CHI_119`: Corrective CHI Oven 1, Corrective, Completed — burner temperature
+  deviation following ALARM event on 2026-08-01; planned 2026-08-01T18:11Z.
+
+  - `WO_CHI_120`: Inspection CHI Oven 1, Inspection, Completed — post-corrective inspection
+  following Aug 1 thermal runaway; planned 2026-08-02T08:54Z.
+
+  - `WO_CHI_122`: Corrective CHI Oven 1, Corrective, Completed — throughput drop and
+  burner nozzle inspection following second incident 2026-08-03; planned 2026-08-03T14:20Z.
+
+  - `WO_CHI_209`: Corrective CHI Oven 1, Corrective, Completed — quality failure linked
+  to temperature exceedance; most recent corrective WO, work_order_number WO-CHI-CO-209.
+
+  - `WO_CHI_443`: Corrective CHI Oven 1, Corrective, Completed — post-incident temperature
+  verification hold (peak 199.95°C Aug 2026 spike), linked to `EQ_CHI_014`.
+
+  - `WO_CHI_439`: Corrective CHI Oven 1, Corrective, Completed — zone temperature
+  stabilisation overshoot hold (Nov-2025), linked to `EQ_CHI_014`.
+
+
+  Good sample question:
+
+
+  For `EQ_CHI_014` (CHI Oven 1) at the Chicago site, list the corrective work orders
+  from the most recent incidents and summarise which events triggered them. What pattern
+  do the corrective WOs suggest for a reliability engineer building an RCA?
+
+
+  Good answer structure:
+
+
+  - Resolved scope: `UNIT_CHI_BAKE_OVEN1` (ISA-88 split unit) and linked equipment
+  `EQ_CHI_014` (CHI Oven 1).
+
+  - Corrective WOs grouped by incident: Aug 2026 thermal runaway (WO_CHI_119, WO_CHI_120,
+  WO_CHI_122, WO_CHI_443), quality failures (WO_CHI_209), earlier stabilisation events
+  (WO_CHI_439).
+
+  - Pattern: recurring corrective events centred on burner load overrange and zone
+  temperature deviation — consistent with CM_COOKIE_002 (Burner Management) control
+  fault.
+
+  - Maintenance planner recommendation based only on known status, work type, linked
+  equipment, and available time series context.'
